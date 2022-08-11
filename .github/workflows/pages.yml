@@ -29,6 +29,7 @@ jobs:
       - name: Build
         run: |
           sudo apt install -y python3-pip
+          sudo apt install pandoc
           pip3 install --upgrade sphinx==4.2.0 furo sphinx-copybutton
           sphinx-build -b html source build
           mv build public
