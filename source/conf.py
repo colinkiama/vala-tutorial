@@ -18,8 +18,10 @@ author = 'Lorenz Wildberg'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
+    'sphinx.ext.githubpages',
     'sphinx_copybutton'
 ]
+
 source_suffix = {
     '.rst': 'restructuredtext'
 }
