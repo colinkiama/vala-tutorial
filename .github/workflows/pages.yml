@@ -28,9 +28,9 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Build
         run: |
-          sudo apt install -y python3-pip,
-          pip3 install --upgrade sphinx==4.2.0 furo sphinx-copybutton,
-          sphinx-build -b html source build,
+          sudo apt install -y python3-pip
+          pip3 install --upgrade sphinx==4.2.0 furo sphinx-copybutton
+          sphinx-build -b html source build
           mv build public
           
       - name: Deploy 🚀
