@@ -3,6 +3,8 @@
 
 An unofficial modern Vala tutorial
 
+You can view the documentation here: https://colinkiama.github.io/vala-tutorial
+
 This tutorial is what I wished I had while I was learning Vala.
 This should not be treated as an official tutorial at all but I hope that it's helpful to you. 
 
