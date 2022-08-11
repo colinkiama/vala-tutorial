@@ -20,7 +20,7 @@ This tutorial is a series of guided programming exercies and projects that will 
 
    They signifiy that the rest of the line is supposed to be entered in the terminal.
 
-You can help us improve this tutorial by contributing to its `GitLab repository <https://gitlab.gnome.org/lwildberg/vala-tutorial>`__.
+You can help us improve this tutorial by contributing to its `GitHub repository <https://www.github.com/colinkiama/vala-tutorial>`_.
 
 .. toctree::
    :hidden:
