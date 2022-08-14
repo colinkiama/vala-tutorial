@@ -7,9 +7,9 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Vala Documentation'
-copyright = '2022, Lorenz Wildberg'
-author = 'Lorenz Wildberg'
+project = 'Vala Tutorial'
+copyright = '2022, Colin Kiama'
+author = 'Colin Kiama'
 
 
 # -- General configuration ---------------------------------------------------
@@ -34,7 +34,7 @@ templates_path = ['_templates']
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = []
 
-html_title = 'Vala Documentation'
+html_title = 'Vala Tutorial'
 
 # -- Options for HTML output -------------------------------------------------
 
