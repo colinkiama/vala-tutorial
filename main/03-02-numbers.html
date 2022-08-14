@@ -6,7 +6,7 @@
 <link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="4. Methods" href="04-00-methods.html" /><link rel="prev" title="3.1. Variables" href="03-01-variables.html" />
 
     <link rel="shortcut icon" href="../_static/logo.png"/><meta name="generator" content="sphinx-5.1.1, furo 2022.06.21"/>
-        <title>3.2. Numbers - Vala Documentation</title>
+        <title>3.2. Numbers - Vala Tutorial</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?digest=40978830699223671f4072448e654b5958f38b89" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
@@ -121,7 +121,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../index.html"><div class="brand">Vala Documentation</div></a>
+      <a href="../index.html"><div class="brand">Vala Tutorial</div></a>
     </div>
     <div class="header-right">
       <label class="toc-overlay-icon toc-header-icon" for="__toc">
@@ -138,7 +138,7 @@
     <img class="sidebar-logo" src="../_static/logo.png" alt="Logo"/>
   </div>
   
-  <span class="sidebar-brand-text">Vala Documentation</span>
+  <span class="sidebar-brand-text">Vala Tutorial</span>
   
 </a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
   <input class="sidebar-search" placeholder=Search name="q" aria-label="Search">
@@ -195,8 +195,141 @@
 <li><p>Explain what operators are</p></li>
 <li><p>Help you write programs using variables with numeric data types</p></li>
 </ul>
-<section id="numeric-data-types">
-<h2><span class="section-number">3.2.1. </span>Numeric Data Types<a class="headerlink" href="#numeric-data-types" title="Permalink to this heading">#</a></h2>
+<p>You will write code for this section in a different directory to the one used for the Hello World program. Follow the following instructions below to do so:</p>
+<ol class="arabic simple">
+<li><p>Create a new directory called <code class="docutils literal notranslate"><span class="pre">Numbers</span></code> under your <code class="docutils literal notranslate"><span class="pre">ValaProjects</span></code> directory.</p></li>
+<li><p>Under the <code class="docutils literal notranslate"><span class="pre">Numbers</span></code>  directory you have just created, create a new file called <code class="docutils literal notranslate"><span class="pre">main.vala</span></code>.</p></li>
+</ol>
+<section id="introduction-to-numbers">
+<h2><span class="section-number">3.2.1. </span>Introduction to Numbers<a class="headerlink" href="#introduction-to-numbers" title="Permalink to this heading">#</a></h2>
+<p>In the last section, we showed an example of a variable:</p>
+<div class="highlight-vala notranslate"><div class="highlight"><pre><span></span><span class="kt">string</span><span class="w"> </span><span class="n">my_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Sara&quot;</span><span class="p">;</span><span class="w"></span>
+</pre></div>
+</div>
+<p>In your <code class="docutils literal notranslate"><span class="pre">main.vala</span></code> file, create a <cite>main</cite> method with, an <code class="docutils literal notranslate"><span class="pre">int</span></code> variable assignment, in the <cite>main</cite> method’s body:</p>
+<div class="literal-block-wrapper docutils container" id="id1">
+<div class="code-block-caption"><span class="caption-text">main.vala - <code class="docutils literal notranslate"><span class="pre">int</span></code> variable declaration.</span><a class="headerlink" href="#id1" title="Permalink to this code">#</a></div>
+<div class="highlight-vala notranslate"><div class="highlight"><pre><span></span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">main</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">num</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">42</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">num</span></code> variable of you’ve created in the line above stores <cite>int</cite> values and you have set the value of it to <code class="docutils literal notranslate"><span class="pre">42</span></code>.</p>
+<p>You can print the value of <code class="docutils literal notranslate"><span class="pre">num</span></code> by adding using the <code class="docutils literal notranslate"><span class="pre">print</span></code> method. Add this line below where you wrote the <code class="docutils literal notranslate"><span class="pre">num</span></code> variable’s delcaration:</p>
+<div class="literal-block-wrapper docutils container" id="id2">
+<div class="code-block-caption"><span class="caption-text">main.vala - Print value of <code class="docutils literal notranslate"><span class="pre">num</span></code></span><a class="headerlink" href="#id2" title="Permalink to this code">#</a></div>
+<div class="highlight-vala notranslate"><div class="highlight"><pre><span></span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">main</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">   </span><span class="kt">int</span><span class="w"> </span><span class="n">num</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">42</span><span class="p">;</span><span class="w"></span>
+<span class="hll"><span class="w">   </span><span class="n">print</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;Value of num: %d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">num</span><span class="p">);</span><span class="w"></span>
+</span><span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<p>Now, compile your code in <code class="docutils literal notranslate"><span class="pre">main.vala</span></code> and run the generated program. You’ll see the following output:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">Value of num: 42</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code class="docutils literal notranslate"><span class="pre">%d</span></code> is a format specifier. We use this specify where we want an <cite>integer</cite> value to be displayed in the printed message. <code class="docutils literal notranslate"><span class="pre">num</span></code> after the <code class="docutils literal notranslate"><span class="pre">,</span></code> is the variable that will be substituted for <code class="docutils literal notranslate"><span class="pre">%d</span></code>.</p>
+<p>We’ll cover format specifiers in more detail, in later sections.</p>
+</div>
+</section>
+<section id="different-numeric-data-types">
+<h2><span class="section-number">3.2.2. </span>Different numeric data types<a class="headerlink" href="#different-numeric-data-types" title="Permalink to this heading">#</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>It’s pretty hard to find documentation on exactly how these GLib data types behave. As of now, the descriptions of each data type may be inaccurate.</p>
+</div>
+<p>Vala has many numeric data types such as:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">char</span></code> - Stores 8 bit integer numbers.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">uchar</span></code> - Stores unsinged 8 bit numbers</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">short</span></code> - Stores 16-bit integer numbers</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ushort</span></code> - Stores unsigned 16 bit numbers</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">int</span></code> - Stores integer numbers (platform dependant behaviour)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">uint</span></code> - Stores unsigned integer numbers (platform dependant behaviour)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">long</span></code> - Stores “big” integer numbers (platform dependent behaviour).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ulong</span></code> - Stores unsigned “big” integer numbers (platform dependent behaviour).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">size_t</span></code> - Stores at least 16 bit integer numbers</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ssize_t</span></code> - Stores at least 16 bit unsigned integer numbers</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">int8</span></code> - Stores 8 bit integer numbers</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">uint8</span></code> - Stores unsinged 8 bit integer numbers</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">int16</span></code> - Stores 16 bit integer numbers</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">uint16</span></code> - Stores unsigned 16 bit integer numbers</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">int32</span></code> - Stores 32 bit integer numbers</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">uint32</span></code> - Stores unsinged 32 bit integer numbers</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">int64</span></code> - Stores 64 bit integer numbers</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">uint64</span></code> - Stores unsigned 64 bit integer numbers</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">unichar</span></code> - Stores unsigned 32 bit integer numbers</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">float</span></code> - Stores 32-bit floating-point numbers</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">double</span></code> - Stores 64-bit floating-point numbers</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Floating-point</strong> numbers are numbers with decimal points in them like: <code class="docutils literal notranslate"><span class="pre">2.5</span></code>.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <strong>unsigned</strong> types above only store postive numbers, allowing them to store bigger numbers values that their signed variants can’t. <strong>Unsinged</strong> types also use the same amount of storage space as their signed variants too.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Some of the data types behave similarly to C data types of the same name.</p>
+</div>
+</section>
+<section id="artithmetic-operations">
+<h2><span class="section-number">3.2.3. </span>Artithmetic Operations<a class="headerlink" href="#artithmetic-operations" title="Permalink to this heading">#</a></h2>
+<p>Rather than teaching you how each of these data types work in detail, we’ll give you pre-written code that shows you how a few of them behave.</p>
+<p>Some of these data types will be covered in the rest of the tutorial.</p>
+<p>Replace all the code in <code class="docutils literal notranslate"><span class="pre">main.vala</span></code> with this code below:</p>
+<div class="literal-block-wrapper docutils container" id="id3">
+<div class="code-block-caption"><span class="caption-text">main.vala - Numeric data type examples</span><a class="headerlink" href="#id3" title="Permalink to this code">#</a></div>
+<div class="highlight-vala notranslate"><div class="highlight"><pre><span></span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">main</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">   </span><span class="c1">// Addition:</span>
+<span class="w">   </span><span class="kt">int</span><span class="w"> </span><span class="n">sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span><span class="w"> </span><span class="c1">// sum = 10</span>
+
+<span class="w">   </span><span class="c1">// Subtraction: difference = 5</span>
+<span class="w">   </span><span class="kt">int</span><span class="w"> </span><span class="n">difference</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">12</span><span class="o">-</span><span class="mi">7</span><span class="p">;</span><span class="w"> </span><span class="c1">// difference = 5</span>
+
+<span class="w">   </span><span class="c1">// Multiplication: product = 4</span>
+<span class="w">   </span><span class="kt">int</span><span class="w"> </span><span class="n">product</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="w"> </span><span class="c1">// product = 4</span>
+
+<span class="w">   </span><span class="c1">// Division:</span>
+<span class="w">   </span><span class="kt">float</span><span class="w"> </span><span class="n">quotient</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">64.2f</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">2f</span><span class="p">;</span><span class="w"> </span><span class="c1">// quotient = 32.1</span>
+<span class="w">   </span><span class="kt">double</span><span class="w"> </span><span class="n">second_quotient</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">99.9</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">11.1</span><span class="p">;</span><span class="w"> </span><span class="c1">// quotient = 9.0</span>
+
+<span class="w">   </span><span class="c1">// Integer division results in the decimal part of the quotient not being</span>
+<span class="w">   </span><span class="c1">// included:</span>
+<span class="w">   </span><span class="kt">int</span><span class="w"> </span><span class="n">floored_quotient</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">16</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span><span class="w"> </span><span class="c1">// floored_quotient = 3</span>
+
+<span class="w">   </span><span class="c1">// Modulus</span>
+<span class="w">   </span><span class="kt">int</span><span class="w"> </span><span class="n">remainder</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="w"> </span><span class="c1">// remainder = 1</span>
+<span class="w">   </span><span class="kt">int</span><span class="w"> </span><span class="n">no_remainder</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="w"> </span><span class="c1">// no_reminader = 0</span>
+
+<span class="w">   </span><span class="c1">// Reusing variables</span>
+
+<span class="w">   </span><span class="kt">int</span><span class="w"> </span><span class="n">changing_num</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"></span>
+<span class="w">   </span><span class="n">changing_num</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">changing_num</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"></span>
+<span class="w">   </span><span class="n">changing_num</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">changing_num</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">sum</span><span class="p">;</span><span class="w"></span>
+<span class="w">   </span><span class="n">changing_num</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">changing_num</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">difference</span><span class="p">;</span><span class="w"></span>
+<span class="w">   </span><span class="n">changing_num</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">changing_num</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">product</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">   </span><span class="n">print</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;Changing number: %d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">changing_num</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<p>Can you guess the value of <code class="docutils literal notranslate"><span class="pre">changing_num</span></code> that gets printed?</p>
+<p>Now run and compile the code, you should see the value <code class="docutils literal notranslate"><span class="pre">-10</span></code> gets printed.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You might see some warnings when compiling the code.
+Don’t worry about these, this is because there were variables we didn’t use.</p>
+<p>The code will run fine.</p>
+</div>
+<p>Feel free to experiment with arithmetic operations by createing your own math expressions.</p>
 </section>
 </section>
 
@@ -242,7 +375,9 @@
           <div class="toc-tree">
             <ul>
 <li><a class="reference internal" href="#">3.2. Numbers</a><ul>
-<li><a class="reference internal" href="#numeric-data-types">3.2.1. Numeric Data Types</a></li>
+<li><a class="reference internal" href="#introduction-to-numbers">3.2.1. Introduction to Numbers</a></li>
+<li><a class="reference internal" href="#different-numeric-data-types">3.2.2. Different numeric data types</a></li>
+<li><a class="reference internal" href="#artithmetic-operations">3.2.3. Artithmetic Operations</a></li>
 </ul>
 </li>
 </ul>

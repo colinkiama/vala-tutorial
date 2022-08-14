@@ -28,7 +28,7 @@ On Unix-based systems (Linux, macOS, \*BSD, etc.) and Powershell in Windows, ent
 
 If you are using CMD in Windows, enter these commands:
 
-.. code-block:: console
+.. code-block:: doscon
    
    > mkdir "%USERPROFILE%\ValaProjects"
    > cd /d "%USERPROFILE%\ValaProjects"
@@ -64,7 +64,7 @@ On Unix-based systems (Linux, macOS, \*BSD, etc), enter the following commands t
 
 If you're using Windows, you need to replace  ``.\main.exe`` instead of ``.\main`` when entering the commands:
 
-.. code-block:: console
+.. code-block:: doscon
    
    > valac main.vala
    > ./main.exe
