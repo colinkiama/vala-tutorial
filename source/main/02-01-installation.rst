@@ -18,7 +18,7 @@ Development files usually come in ``*-devel`` packages, for example ``libgee-dev
 
 .. code-block:: console
 
-   sudo dnf install vala
+   $ sudo dnf install vala
 
 Debian
 ~~~~~~
@@ -27,14 +27,14 @@ You need to install ``*-dev`` packages, to get development files on Debian.
 
 .. code-block:: console
 
-   sudo apt install valac
+   $ sudo apt install valac
 
 Arch Linux
 ~~~~~~~~~~
 
 .. code-block:: console
 
-   sudo pacman -S vala
+   $ sudo pacman -S vala
 
 \*BSD
 -----
@@ -43,13 +43,13 @@ First you install the port:
 
 .. code-block:: console
 
-   cd /usr/ports/lang/vala/ && make install clean
+   $ cd /usr/ports/lang/vala/ && make install clean
 
 And then you can add the package:
 
 .. code-block:: console
 
-   pkg install vala
+   $ pkg install vala
 
 Windows
 -------
@@ -62,9 +62,9 @@ then vala:
 
 .. code-block:: console
 
-   pacman -S mingw-w64-x86_64-gcc
-   pacman -S mingw-w64-x86_64-pkg-config
-   pacman -S mingw-w64-x86_64-vala
+   $ pacman -S mingw-w64-x86_64-gcc
+   $ pacman -S mingw-w64-x86_64-pkg-config
+   $ pacman -S mingw-w64-x86_64-vala
 
 You also need to install all libraries you want to use individually.
 
@@ -80,7 +80,7 @@ To install Vala on you can use `brew <https://brew.sh>`__, a package manager for
 
 .. code-block:: console
 
-   brew install vala
+   $ brew install vala
 
 Verifying the Installation
 -------------------------- 
