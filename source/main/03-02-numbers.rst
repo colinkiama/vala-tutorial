@@ -24,6 +24,7 @@ In the last section, we showed an example of a variable:
 In your ``main.vala`` file, create a `main` method with, an ``int`` variable assignment, in the `main` method's body:
 
 .. code-block:: vala
+   :linenos:
    :caption: main.vala - ``int`` variable declaration.
 
    public static void main () {
@@ -35,6 +36,7 @@ The ``num`` variable of you've created in the line above stores `int` values and
 You can print the value of ``num`` by adding using the ``print`` method. Add this line below where you wrote the ``num`` variable's delcaration:
 
 .. code-block:: vala
+   :linenos:
    :caption: main.vala - Print value of ``num``
    :emphasize-lines: 3
 
@@ -111,6 +113,7 @@ Some of these data types will be covered in the rest of the tutorial.
 Replace all the code in ``main.vala`` with this code below:
 
 .. code-block:: vala
+   :linenos:
    :caption: main.vala - Numeric data type examples
 
    public static void main () {

@@ -30,6 +30,7 @@ Setup steps:
 In ``main.vala``, write the following code:
 
 .. code-block:: vala
+   :linenos:
    :caption: main.vala
    
    public static void main () {
@@ -46,6 +47,7 @@ Let's make your program more interesting now.
 Above the ``print`` method, add declare a boolean variable set to ``false``:
 
 .. code-block:: vala
+   :linenos:
    :caption: main.vala - Boolean variable added
 
    public static void main () {
@@ -58,6 +60,7 @@ We want the program above to only print "Hello" when the value of ``should_print
 Update ``main.vala`` so that it wraps the print call with an ``if-statement``, that checks if the value of ``should_print`` is ``true``:
 
 .. code-block:: vala
+   :linenos:
    
    public static void main () {
       bool should_print = false;
@@ -71,6 +74,32 @@ Now compile and your code.
 
 As you can see, nothing happens. Let's break down why:
 
+.. code-block:: vala
+   :linenos:
+   :emphasize-lines: 4, 6
+   
+   public static void main () {
+      bool should_print = false;
+
+      if (should_print == true) {
+         print ("Hello!\n");
+      }
+   }
+
+The highlighted lines are the ``if-statement``. 
+``if`` is what you use to start the statement. The expression between the brackets (``()``)
+evaluates a boolean value. If the evaluated boolean value is ``true``, the code between the curly braces (``{}``), will run.
+
+Now set the ``should_print`` variable to ``true`` then compile and run the program again:
 
 
+.. code-block:: vala
+   :linenos:
+   
+   public static void main () {
+      bool should_print = false;
 
+      if (should_print == true) {
+         print ("Hello!\n");
+      }
+   }
