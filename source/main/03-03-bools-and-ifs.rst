@@ -133,5 +133,18 @@ Update ``main.vala`` so that the code looks like this:
    1. It's not clear that ``first_name`` is a boolean from the variable's idenitifer alone.
    2. The if statement doesn't read well: "If first name".
 
- 
+If-else statements
+~~~~~~~~~~~~~~~~~~ 
 
+What if you wanted only wanted to run code that only runs when a variable is ``true`` and a different piece of code to run when that same variable is ``false``.
+
+This is possible using if-else statements:
+
+.. code-block:: vala
+   bool is_on = false;
+
+   if (is_on) {
+       print ("Lights on!");
+   } else {
+       print ("Lights off!");
+   }
