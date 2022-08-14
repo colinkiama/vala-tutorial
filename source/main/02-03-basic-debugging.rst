@@ -51,6 +51,14 @@ In Vala, a `syntax error` is when there the compiler doesn't read the a sequence
 
 We mentioned in the previous section that a semicolon (``;``) lets the compiler know when an expression has ended. The semiclolon is the "expression/statement" delimiter the syntax error is referring to.
 
+``2.24-2.24`` refers to the location range in ``main.vala`` where the compiler spotted the error. It's in the format: ``START_LINE_NUMBER.CHARACTER_NUMBER-END_LINE_NUMBER.CHARACTER_NUMBER```.
+
+You can use this to find help you navigate to exactly where the error occured in your code. 
+
+.. tip::
+   
+   Your code editor may have features that that take you to the exact postiion in your code where, the compiler mentioned the error occured.
+
 Add back the the semicolon to the end of the line so the compiler can read that line containing the ``print`` method:
 
 .. code-block:: vala
