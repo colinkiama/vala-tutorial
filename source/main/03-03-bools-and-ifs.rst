@@ -95,12 +95,43 @@ Now set the ``should_print`` variable to ``true`` then compile and run the progr
 
 
 .. code-block:: vala
+   :caption: main.vala
    :linenos:
    
    public static void main () {
-      bool should_print = false;
+      bool should_print = true;
 
       if (should_print == true) {
          print ("Hello!\n");
       }
    }
+
+The program above will print "Hello!".
+
+Variable identifiers themselves also count as an expression. Let's take advantage of this to simplify our program a bit. 
+
+Update ``main.vala`` so that the code looks like this:
+
+.. code-block:: vala
+   :caption: main.vala
+   :linenos:
+   
+   public static void main () {
+      bool should_print = true;
+
+      if (should_print) {
+         print ("Hello!\n");
+      }
+   }
+
+.. warning::
+   
+   For this to work effectively, you should take care in naming your variables. Name your variables semantically otherwise, your code will be harder to read than before.
+
+   For example: if ``should_print`` was named ``first_name``, there would be two major issues:
+   
+   1. It's not clear that ``first_name`` is a boolean from the variable's idenitifer alone.
+   2. The if statement doesn't read well: "If first name".
+
+ 
+
