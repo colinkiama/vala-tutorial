@@ -18,6 +18,7 @@ Introduction to Numbers
 In the last section, we showed an example of a variable:
 
 .. code-block:: vala
+   :linenos:
    
    string my_name = "Sara";
 

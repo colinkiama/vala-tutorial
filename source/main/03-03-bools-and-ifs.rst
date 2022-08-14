@@ -18,6 +18,7 @@ Instead of ``on`` and ``off``, we'd use the ``true`` and ``false`` boolean value
 We can store boolean values in variables:
 
 .. code-block:: vala
+   :linenos:
    
    bool is_on = false;
 

@@ -96,7 +96,6 @@ The curly brackets (``{}``) define the start and end of the **method** body. Our
 The ``main`` **method** contains the following code:
 
 .. code-block:: vala
-   :linenos:
    :emphasize-lines: 2
    
    public static void main () {
