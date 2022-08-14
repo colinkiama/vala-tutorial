@@ -111,9 +111,11 @@ Important note:
 
 ### Enums and Switch Statements
 
-1. Introduce switch statements. (Perform an action based on the value of string for this example)
-2. Introduce enums
-3. Showcase how switch statements and enums work well together
+1. Start with an example full of an excessive number of ``else-if`` statements.
+2. Introduce switch statements with one of the key benefits of being much more flexible than ``if-statements``. (Perform an action based on the value of string for this example)
+3. Introduce enums
+4. Showcase how switch statements and enums work well together
+5. Show off case-collapse feature (How a set of values can run the same logic). 
 
 ### Loops
 

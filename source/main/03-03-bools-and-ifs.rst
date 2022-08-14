@@ -55,7 +55,7 @@ Above the ``print`` method, add declare a boolean variable set to ``false``:
 
 We want the program above to only print "Hello" when the value of ``should_print`` is set to ``true``. You can do this by using a control statement called an ``if-statement``.
 
-Update ``main.vala`` so that it wraps the print call with an ``if-statement``, that checks if the value of ``should_print`` is ``true``
+Update ``main.vala`` so that it wraps the print call with an ``if-statement``, that checks if the value of ``should_print`` is ``true``:
 
 .. code-block:: vala
    
@@ -69,6 +69,8 @@ Update ``main.vala`` so that it wraps the print call with an ``if-statement``, t
 
 Now compile and your code.
 
-As you can see, nothing happens. Let's break down why: 
+As you can see, nothing happens. Let's break down why:
+
+
 
 
