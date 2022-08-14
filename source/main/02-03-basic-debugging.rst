@@ -62,6 +62,7 @@ You can use this to find help you navigate to exactly where the error occured in
 Add back the the semicolon to the end of the line so the compiler can read that line containing the ``print`` method:
 
 .. code-block:: vala
+   :linenos:
    :caption: main.vala
    
    public static void main () {
@@ -90,6 +91,7 @@ defined in the language or in our code anywhere but. The compiler fails to find 
 You can fix this by adding back the speech marks to opening and closing speech marks to ``Hello, world`` so it looks like this: ``"Hello, world"``.
 
 .. code-block:: vala
+   :linenos:
    :caption: main.vala
 
    public static void main () {
@@ -105,6 +107,7 @@ Although the program is correct, the resulting ouptut is not what we wanted. Thi
 This can be easily fixed by adding "\\n" at the end of "Hello, world" string.
 
 .. code-block:: vala
+   :linenos:
    :caption: main.vala 
    
    public static void main () {
@@ -123,6 +126,7 @@ Replace the word ""world" in the "Hello. world" string with your own name.
 For somebody named "Colin", this is what their code would look like:
 
 .. code-block:: vala
+   :linenos:
    :caption: main.vala
 
    public static void main () {
@@ -158,6 +162,7 @@ Now add a comment to your personalised Hello World program.
 For somebody named "Colin", this is what their code would look like:
 
 .. code-block:: vala
+   :linenos:
    :caption: main.vala
 
    // Prints the line "Hello, Colin" to the terminal."

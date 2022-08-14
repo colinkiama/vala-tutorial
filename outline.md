@@ -28,7 +28,7 @@ Important note:
 12. D-Bus
 13. Memory Management
 14. Profiles
-15. Coding Styles
+15. Coding Styles (You could also mention vala-lint here too.)
 16. Community
 17. Epilogue (Congratulate student and point the to further resources. Where could they go next?)
 
@@ -99,7 +99,7 @@ Important note:
 
 ### Booleans and if-statements
 
-1. Start with a light-bulb analogy
+1. Start with a light bulb analogy
 2. Now go on to how we can represent one-off states in computers using Booleans (true, false)
 3. Print a few Boolean variables
 4. Introduce conditional operators (&&, ||, !)
@@ -111,9 +111,11 @@ Important note:
 
 ### Enums and Switch Statements
 
-1. Introduce switch statements. (Perform an action based on the value of string for this example)
-2. Introduce enums
-3. Showcase how switch statements and enums work well together
+1. Start with an example full of an excessive number of ``else-if`` statements.
+2. Introduce switch statements with one of the key benefits of being much more flexible than ``if-statements``. (Perform an action based on the value of string for this example)
+3. Introduce enums
+4. Showcase how switch statements and enums work well together
+5. Show off case-collapse feature (How a set of values can run the same logic). 
 
 ### Loops
 
