@@ -14,6 +14,7 @@ A variable in Vala stores data and can be referred to using its identiier.
 Here's an example of a variable below:
 
 .. code-block:: vala
+   :linenos:
    
    string my_name = "Sara";
 

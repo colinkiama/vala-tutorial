@@ -3,7 +3,7 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
-<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="4. Methods" href="04-00-methods.html" /><link rel="prev" title="3.1. Variables" href="03-01-variables.html" />
+<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="3.3. Booleans and if-statements" href="03-03-bools-and-ifs.html" /><link rel="prev" title="3.1. Variables" href="03-01-variables.html" />
 
     <link rel="shortcut icon" href="../_static/logo.png"/><meta name="generator" content="sphinx-5.1.1, furo 2022.06.21"/>
         <title>3.2. Numbers - Vala Tutorial</title>
@@ -157,6 +157,7 @@
 <li class="toctree-l1 current has-children"><a class="reference internal" href="03-00-data-types-and-control-structures.html">3. Data Types and Control Structures</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="03-01-variables.html">3.1. Variables</a></li>
 <li class="toctree-l2 current current-page"><a class="current reference internal" href="#">3.2. Numbers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="03-03-bools-and-ifs.html">3.3. Booleans and if-statements</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="04-00-methods.html">4. Methods</a></li>
@@ -203,15 +204,15 @@
 <section id="introduction-to-numbers">
 <h2><span class="section-number">3.2.1. </span>Introduction to Numbers<a class="headerlink" href="#introduction-to-numbers" title="Permalink to this heading">#</a></h2>
 <p>In the last section, we showed an example of a variable:</p>
-<div class="highlight-vala notranslate"><div class="highlight"><pre><span></span><span class="kt">string</span><span class="w"> </span><span class="n">my_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Sara&quot;</span><span class="p">;</span><span class="w"></span>
+<div class="highlight-vala notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="kt">string</span><span class="w"> </span><span class="n">my_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Sara&quot;</span><span class="p">;</span><span class="w"></span>
 </pre></div>
 </div>
 <p>In your <code class="docutils literal notranslate"><span class="pre">main.vala</span></code> file, create a <cite>main</cite> method with, an <code class="docutils literal notranslate"><span class="pre">int</span></code> variable assignment, in the <cite>main</cite> method’s body:</p>
 <div class="literal-block-wrapper docutils container" id="id1">
 <div class="code-block-caption"><span class="caption-text">main.vala - <code class="docutils literal notranslate"><span class="pre">int</span></code> variable declaration.</span><a class="headerlink" href="#id1" title="Permalink to this code">#</a></div>
-<div class="highlight-vala notranslate"><div class="highlight"><pre><span></span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">main</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">num</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">42</span><span class="p">;</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<div class="highlight-vala notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">main</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="linenos">2</span><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">num</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">42</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">3</span><span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 </div>
@@ -219,10 +220,10 @@
 <p>You can print the value of <code class="docutils literal notranslate"><span class="pre">num</span></code> by adding using the <code class="docutils literal notranslate"><span class="pre">print</span></code> method. Add this line below where you wrote the <code class="docutils literal notranslate"><span class="pre">num</span></code> variable’s delcaration:</p>
 <div class="literal-block-wrapper docutils container" id="id2">
 <div class="code-block-caption"><span class="caption-text">main.vala - Print value of <code class="docutils literal notranslate"><span class="pre">num</span></code></span><a class="headerlink" href="#id2" title="Permalink to this code">#</a></div>
-<div class="highlight-vala notranslate"><div class="highlight"><pre><span></span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">main</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">   </span><span class="kt">int</span><span class="w"> </span><span class="n">num</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">42</span><span class="p">;</span><span class="w"></span>
-<span class="hll"><span class="w">   </span><span class="n">print</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;Value of num: %d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">num</span><span class="p">);</span><span class="w"></span>
-</span><span class="p">}</span><span class="w"></span>
+<div class="highlight-vala notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">main</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="linenos">2</span><span class="w">   </span><span class="kt">int</span><span class="w"> </span><span class="n">num</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">42</span><span class="p">;</span><span class="w"></span>
+<span class="hll"><span class="linenos">3</span><span class="w">   </span><span class="n">print</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;Value of num: %d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">num</span><span class="p">);</span><span class="w"></span>
+</span><span class="linenos">4</span><span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 </div>
@@ -286,38 +287,38 @@
 <p>Replace all the code in <code class="docutils literal notranslate"><span class="pre">main.vala</span></code> with this code below:</p>
 <div class="literal-block-wrapper docutils container" id="id3">
 <div class="code-block-caption"><span class="caption-text">main.vala - Numeric data type examples</span><a class="headerlink" href="#id3" title="Permalink to this code">#</a></div>
-<div class="highlight-vala notranslate"><div class="highlight"><pre><span></span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">main</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">   </span><span class="c1">// Addition:</span>
-<span class="w">   </span><span class="kt">int</span><span class="w"> </span><span class="n">sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span><span class="w"> </span><span class="c1">// sum = 10</span>
-
-<span class="w">   </span><span class="c1">// Subtraction: difference = 5</span>
-<span class="w">   </span><span class="kt">int</span><span class="w"> </span><span class="n">difference</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">12</span><span class="o">-</span><span class="mi">7</span><span class="p">;</span><span class="w"> </span><span class="c1">// difference = 5</span>
-
-<span class="w">   </span><span class="c1">// Multiplication: product = 4</span>
-<span class="w">   </span><span class="kt">int</span><span class="w"> </span><span class="n">product</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="w"> </span><span class="c1">// product = 4</span>
-
-<span class="w">   </span><span class="c1">// Division:</span>
-<span class="w">   </span><span class="kt">float</span><span class="w"> </span><span class="n">quotient</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">64.2f</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">2f</span><span class="p">;</span><span class="w"> </span><span class="c1">// quotient = 32.1</span>
-<span class="w">   </span><span class="kt">double</span><span class="w"> </span><span class="n">second_quotient</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">99.9</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">11.1</span><span class="p">;</span><span class="w"> </span><span class="c1">// quotient = 9.0</span>
-
-<span class="w">   </span><span class="c1">// Integer division results in the decimal part of the quotient not being</span>
-<span class="w">   </span><span class="c1">// included:</span>
-<span class="w">   </span><span class="kt">int</span><span class="w"> </span><span class="n">floored_quotient</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">16</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span><span class="w"> </span><span class="c1">// floored_quotient = 3</span>
-
-<span class="w">   </span><span class="c1">// Modulus</span>
-<span class="w">   </span><span class="kt">int</span><span class="w"> </span><span class="n">remainder</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="w"> </span><span class="c1">// remainder = 1</span>
-<span class="w">   </span><span class="kt">int</span><span class="w"> </span><span class="n">no_remainder</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="w"> </span><span class="c1">// no_reminader = 0</span>
-
-<span class="w">   </span><span class="c1">// Reusing variables</span>
-
-<span class="w">   </span><span class="kt">int</span><span class="w"> </span><span class="n">changing_num</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"></span>
-<span class="w">   </span><span class="n">changing_num</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">changing_num</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"></span>
-<span class="w">   </span><span class="n">changing_num</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">changing_num</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">sum</span><span class="p">;</span><span class="w"></span>
-<span class="w">   </span><span class="n">changing_num</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">changing_num</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">difference</span><span class="p">;</span><span class="w"></span>
-<span class="w">   </span><span class="n">changing_num</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">changing_num</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">product</span><span class="p">;</span><span class="w"></span>
-
-<span class="w">   </span><span class="n">print</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;Changing number: %d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">changing_num</span><span class="p">);</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<div class="highlight-vala notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">main</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="linenos"> 2</span><span class="w">   </span><span class="c1">// Addition:</span>
+<span class="linenos"> 3</span><span class="w">   </span><span class="kt">int</span><span class="w"> </span><span class="n">sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span><span class="w"> </span><span class="c1">// sum = 10</span>
+<span class="linenos"> 4</span>
+<span class="linenos"> 5</span><span class="w">   </span><span class="c1">// Subtraction: difference = 5</span>
+<span class="linenos"> 6</span><span class="w">   </span><span class="kt">int</span><span class="w"> </span><span class="n">difference</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">12</span><span class="o">-</span><span class="mi">7</span><span class="p">;</span><span class="w"> </span><span class="c1">// difference = 5</span>
+<span class="linenos"> 7</span>
+<span class="linenos"> 8</span><span class="w">   </span><span class="c1">// Multiplication: product = 4</span>
+<span class="linenos"> 9</span><span class="w">   </span><span class="kt">int</span><span class="w"> </span><span class="n">product</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="w"> </span><span class="c1">// product = 4</span>
+<span class="linenos">10</span>
+<span class="linenos">11</span><span class="w">   </span><span class="c1">// Division:</span>
+<span class="linenos">12</span><span class="w">   </span><span class="kt">float</span><span class="w"> </span><span class="n">quotient</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">64.2f</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">2f</span><span class="p">;</span><span class="w"> </span><span class="c1">// quotient = 32.1</span>
+<span class="linenos">13</span><span class="w">   </span><span class="kt">double</span><span class="w"> </span><span class="n">second_quotient</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">99.9</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">11.1</span><span class="p">;</span><span class="w"> </span><span class="c1">// quotient = 9.0</span>
+<span class="linenos">14</span>
+<span class="linenos">15</span><span class="w">   </span><span class="c1">// Integer division results in the decimal part of the quotient not being</span>
+<span class="linenos">16</span><span class="w">   </span><span class="c1">// included:</span>
+<span class="linenos">17</span><span class="w">   </span><span class="kt">int</span><span class="w"> </span><span class="n">floored_quotient</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">16</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span><span class="w"> </span><span class="c1">// floored_quotient = 3</span>
+<span class="linenos">18</span>
+<span class="linenos">19</span><span class="w">   </span><span class="c1">// Modulus</span>
+<span class="linenos">20</span><span class="w">   </span><span class="kt">int</span><span class="w"> </span><span class="n">remainder</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="w"> </span><span class="c1">// remainder = 1</span>
+<span class="linenos">21</span><span class="w">   </span><span class="kt">int</span><span class="w"> </span><span class="n">no_remainder</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="w"> </span><span class="c1">// no_reminader = 0</span>
+<span class="linenos">22</span>
+<span class="linenos">23</span><span class="w">   </span><span class="c1">// Reusing variables</span>
+<span class="linenos">24</span>
+<span class="linenos">25</span><span class="w">   </span><span class="kt">int</span><span class="w"> </span><span class="n">changing_num</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">26</span><span class="w">   </span><span class="n">changing_num</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">changing_num</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">27</span><span class="w">   </span><span class="n">changing_num</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">changing_num</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">sum</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">28</span><span class="w">   </span><span class="n">changing_num</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">changing_num</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">difference</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">29</span><span class="w">   </span><span class="n">changing_num</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">changing_num</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">product</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">30</span>
+<span class="linenos">31</span><span class="w">   </span><span class="n">print</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;Changing number: %d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">changing_num</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">32</span><span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 </div>
@@ -337,12 +338,12 @@ Don’t worry about these, this is because there were variables we didn’t use.
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="04-00-methods.html">
+          <a class="next-page" href="03-03-bools-and-ifs.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title"><span class="section-number">4. </span>Methods</div>
+                <div class="title"><span class="section-number">3.3. </span>Booleans and if-statements</div>
               </div>
               <svg><use href="#svg-arrow-right"></use></svg>
             </a>
