@@ -13,6 +13,7 @@ This should not be treated as an official tutorial at all but I hope that it's h
 - `sphinx >= 4.2.0`
 - `furo` (Sphinx Theme)
 - `sphinx-copy-button` (Sphinx Extension)
+- `pygments`
 - `make`
 
 ## Getting started
