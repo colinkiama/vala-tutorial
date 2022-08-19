@@ -141,6 +141,8 @@ What if you wanted only wanted to run code that only runs when a variable is ``t
 This is possible using if-else statements:
 
 .. code-block:: vala
+   :caption: main.vala
+   :linenos:
 
    bool is_on = false;
 
@@ -152,7 +154,9 @@ This is possible using if-else statements:
 
 Let's try this out. Modfiy ``main.vala`` to look like this:
 
-.. code-block:: vala
+.. code-block:: vala   
+   :caption: main.vala
+   :linenos:
    
    public static void main () {
       bool should_print_hello = true;
@@ -177,10 +181,11 @@ We can keep adding more conditions to try using ``else if``.
 Update ``main.vala`` with this code below:
 
 .. code-block:: vala
+   :caption: main.vala
+   :linenos:
 
    bool should_print_hello = true;
    bool should_print_name = true;
-
 
    if (should_print_hello && should_print_name) {
       print ("Hello, Vala\n");
@@ -202,3 +207,10 @@ If none of the conditions are met, the program will run the code in the ``else``
    The resulting value is ``true`` when both of the operator's (``&&``) operands are also true, otherwise, the resulting value is ``false``.
 
    We'll talk about conditional operators more very soon.
+
+Discovering what the output of the program is based on the value of ``should_print_hello`` and ``should_print_name`` will be let as a challenge to you.
+
+Conditional Operators
+~~~~~~~~~~~~~~~~~~~~~
+
+Do you remember the logical AND (``&&``) operator? 
