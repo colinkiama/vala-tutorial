@@ -168,5 +168,37 @@ Now compile and run your code. "Hello" will be printed.
 
 If you change the value of ``should_print_hello`` to ``false``, "Goodbye" will
 be printed instead.
- 
 
+if-else-if
+~~~~~~~~~~
+
+We can keep adding more conditions to try using ``else if``.
+
+Update ``main.vala`` with this code below:
+
+.. code-block:: vala
+
+   bool should_print_hello = true;
+   bool should_print_name = true;
+
+
+   if (should_print_hello && should_print_name) {
+      print ("Hello, Vala\n");
+   } else if (should_print_hello) {
+      print ("Hello\n")
+   } else if ("should_print_name") {
+      print ("Vala\n");
+   } else {
+      print ("Goodbye\n")
+   }
+
+The program will run the code in one of the ``if`` orr ``else if`` blocks if their conditions are met. 
+
+If none of the conditions are met, the program will run the code in the ``else`` block.
+
+.. note::
+
+   ``&&`` is a conditional operator called the "Logical AND" operator
+   The resulting value is ``true`` when both of the operator's (``&&``) operands are also true, otherwise, the resulting value is ``false``.
+
+   We'll talk about conditional operators more very soon.
