@@ -9,7 +9,7 @@ In this section, we'll:
 What's a variable?
 ------------------
 
-A variable in Vala stores data and can be referred to using its identiier.
+A variable in Vala stores data and can be referred to using its identifier.
 
 Here's an example of a variable below:
 
@@ -22,7 +22,7 @@ The line above is a variable assignment.
 
 Let's breakdown each part of the variable assignment:
 
-- ``string`` is the data type of the variable. The data type determines the values you are allowed to set the variable to You used a **string** to tell the program what text to display in your terminal in your Hello World program.
+- ``string`` is the data type of the variable. The data type determines the values you are allowed to set the variable to. You used a **string** to tell the program what text to display in your terminal in your Hello World program.
 - ``my_name`` is the identifier of the variable. To refer to the variable in your code, you need to use ``my_name``.
 - ``"Sara"`` is the value of the variable.
 
