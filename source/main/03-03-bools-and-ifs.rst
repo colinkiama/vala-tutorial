@@ -141,6 +141,7 @@ What if you wanted only wanted to run code that only runs when a variable is ``t
 This is possible using if-else statements:
 
 .. code-block:: vala
+
    bool is_on = false;
 
    if (is_on) {
@@ -148,3 +149,24 @@ This is possible using if-else statements:
    } else {
        print ("Lights off!");
    }
+
+Let's try this out. Modfiy ``main.vala`` to look like this:
+
+.. code-block:: vala
+   
+   public static void main () {
+      bool should_print_hello = true;
+
+      if (should_print_hello) {
+         print ("Hello\n");
+      } else {
+         print ("Goodbye\n");
+      }
+   }
+
+Now compile and run your code. "Hello" will be printed.
+
+If you change the value of ``should_print_hello`` to ``false``, "Goodbye" will
+be printed instead.
+ 
+
