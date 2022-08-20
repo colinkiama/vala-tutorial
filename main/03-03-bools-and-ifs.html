@@ -299,6 +299,108 @@ evaluates a boolean value. If the evaluated boolean value is <code class="docuti
 <h2><span class="section-number">3.3.3. </span>If-else statements<a class="headerlink" href="#if-else-statements" title="Permalink to this heading">#</a></h2>
 <p>What if you wanted only wanted to run code that only runs when a variable is <code class="docutils literal notranslate"><span class="pre">true</span></code> and a different piece of code to run when that same variable is <code class="docutils literal notranslate"><span class="pre">false</span></code>.</p>
 <p>This is possible using if-else statements:</p>
+<div class="highlight-vala notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="kt">bool</span><span class="w"> </span><span class="n">is_on</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">2</span>
+<span class="linenos">3</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">is_on</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="linenos">4</span><span class="w">    </span><span class="n">print</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;Lights on!&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">5</span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="linenos">6</span><span class="w">    </span><span class="n">print</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;Lights off!&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">7</span><span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<p>Let’s try this out. Modfiy <code class="docutils literal notranslate"><span class="pre">main.vala</span></code> to look like this:</p>
+<div class="literal-block-wrapper docutils container" id="id5">
+<div class="code-block-caption"><span class="caption-text">main.vala</span><a class="headerlink" href="#id5" title="Permalink to this code">#</a></div>
+<div class="highlight-vala notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">main</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="linenos">2</span><span class="w">   </span><span class="kt">bool</span><span class="w"> </span><span class="n">should_print_hello</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">true</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">3</span>
+<span class="linenos">4</span><span class="w">   </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">should_print_hello</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="linenos">5</span><span class="w">      </span><span class="n">print</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;Hello</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">6</span><span class="w">   </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="linenos">7</span><span class="w">      </span><span class="n">print</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;Goodbye</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">8</span><span class="w">   </span><span class="p">}</span><span class="w"></span>
+<span class="linenos">9</span><span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<p>Now compile and run your code. “Hello” will be printed.</p>
+<p>If you change the value of <code class="docutils literal notranslate"><span class="pre">should_print_hello</span></code> to <code class="docutils literal notranslate"><span class="pre">false</span></code>, “Goodbye” will
+be printed instead.</p>
+</section>
+<section id="if-else-if">
+<h2><span class="section-number">3.3.4. </span>if-else-if<a class="headerlink" href="#if-else-if" title="Permalink to this heading">#</a></h2>
+<p>We can keep adding more conditions to try using <code class="docutils literal notranslate"><span class="pre">else</span> <span class="pre">if</span></code>.</p>
+<p>Update <code class="docutils literal notranslate"><span class="pre">main.vala</span></code> with this code below:</p>
+<div class="literal-block-wrapper docutils container" id="id6">
+<div class="code-block-caption"><span class="caption-text">main.vala</span><a class="headerlink" href="#id6" title="Permalink to this code">#</a></div>
+<div class="highlight-vala notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="kt">bool</span><span class="w"> </span><span class="n">should_print_hello</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">true</span><span class="p">;</span><span class="w"></span>
+<span class="linenos"> 2</span><span class="kt">bool</span><span class="w"> </span><span class="n">should_print_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">true</span><span class="p">;</span><span class="w"></span>
+<span class="linenos"> 3</span>
+<span class="linenos"> 4</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">should_print_hello</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">should_print_name</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="linenos"> 5</span><span class="w">   </span><span class="n">print</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;Hello, Vala</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="linenos"> 6</span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">should_print_hello</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="linenos"> 7</span><span class="w">   </span><span class="n">print</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;Hello</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">)</span><span class="w"></span>
+<span class="linenos"> 8</span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;should_print_name&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="linenos"> 9</span><span class="w">   </span><span class="n">print</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;Vala</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">10</span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="linenos">11</span><span class="w">   </span><span class="n">print</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;Goodbye</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">)</span><span class="w"></span>
+<span class="linenos">12</span><span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<p>The program will run the code in one of the <code class="docutils literal notranslate"><span class="pre">if</span></code> orr <code class="docutils literal notranslate"><span class="pre">else</span> <span class="pre">if</span></code> blocks if their conditions are met.</p>
+<p>If none of the conditions are met, the program will run the code in the <code class="docutils literal notranslate"><span class="pre">else</span></code> block.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code class="docutils literal notranslate"><span class="pre">&amp;&amp;</span></code> is a conditional operator called the “Logical AND” operator
+The resulting value is <code class="docutils literal notranslate"><span class="pre">true</span></code> when both of the operator’s (<code class="docutils literal notranslate"><span class="pre">&amp;&amp;</span></code>) operands are also true, otherwise, the resulting value is <code class="docutils literal notranslate"><span class="pre">false</span></code>.</p>
+<p>We’ll talk about conditional operators more very soon.</p>
+</div>
+<p>Discovering what the output of the program is based on the value of <code class="docutils literal notranslate"><span class="pre">should_print_hello</span></code> and <code class="docutils literal notranslate"><span class="pre">should_print_name</span></code> will be let as a challenge to you.</p>
+</section>
+<section id="conditional-operators">
+<h2><span class="section-number">3.3.5. </span>Conditional Operators<a class="headerlink" href="#conditional-operators" title="Permalink to this heading">#</a></h2>
+<p>Do you remember the logical AND (<code class="docutils literal notranslate"><span class="pre">&amp;&amp;</span></code>) operator? Well there are other operators like it. We’ll show you a quick overview of them below:</p>
+<div class="highlight-vala notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1">// Logical AND operator (&amp;&amp;)</span>
+<span class="linenos"> 2</span><span class="nb">false</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span><span class="w"> </span><span class="c1">// false</span>
+<span class="linenos"> 3</span><span class="nb">true</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">false</span><span class="w"> </span><span class="c1">// false</span>
+<span class="linenos"> 4</span><span class="nb">false</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="c1">// false;</span>
+<span class="linenos"> 5</span><span class="nb">true</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="c1">// true;</span>
+<span class="linenos"> 6</span>
+<span class="linenos"> 7</span><span class="c1">// Logical OR operator (||)</span>
+<span class="linenos"> 8</span><span class="nb">false</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span><span class="w"> </span><span class="c1">// false</span>
+<span class="linenos"> 9</span><span class="nb">true</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="nb">false</span><span class="w"> </span><span class="c1">// true</span>
+<span class="linenos">10</span><span class="nb">false</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="c1">// true;</span>
+<span class="linenos">11</span><span class="nb">true</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="c1">// true;</span>
+<span class="linenos">12</span>
+<span class="linenos">13</span><span class="c1">// NOT operator (!)</span>
+<span class="linenos">14</span><span class="o">!</span><span class="nb">false</span><span class="w"> </span><span class="c1">// true</span>
+<span class="linenos">15</span><span class="o">!</span><span class="nb">true</span><span class="w"> </span><span class="c1">// false</span>
+<span class="linenos">16</span>
+<span class="linenos">17</span><span class="c1">// Equality test (==)</span>
+<span class="linenos">18</span><span class="mi">2</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">8</span><span class="w"> </span><span class="c1">// false;</span>
+<span class="linenos">19</span><span class="mi">2</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="c1">// true;</span>
+<span class="linenos">20</span>
+<span class="linenos">21</span><span class="c1">// Less than (&lt;)</span>
+<span class="linenos">22</span><span class="mi">4</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="w"> </span><span class="c1">// false;</span>
+<span class="linenos">23</span><span class="mi">2</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">4</span><span class="p">;</span><span class="w"> </span><span class="c1">// true;</span>
+<span class="linenos">24</span>
+<span class="linenos">25</span><span class="c1">// Greater than (&gt;)</span>
+<span class="linenos">26</span><span class="mi">4</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="w"> </span><span class="c1">// true;</span>
+<span class="linenos">27</span><span class="mi">2</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">4</span><span class="p">;</span><span class="w"> </span><span class="c1">// false;</span>
+<span class="linenos">28</span>
+<span class="linenos">29</span><span class="c1">// Less than or equal to (&lt;=)</span>
+<span class="linenos">30</span><span class="mi">4</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="w"> </span><span class="c1">// false;</span>
+<span class="linenos">31</span><span class="mi">2</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">4</span><span class="p">;</span><span class="w"> </span><span class="c1">// true;</span>
+<span class="linenos">32</span><span class="mi">4</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">4</span><span class="w"> </span><span class="c1">// true</span>
+<span class="linenos">33</span>
+<span class="linenos">34</span><span class="c1">// Greater than or equal to (&gt;=)</span>
+<span class="linenos">35</span><span class="mi">4</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="w"> </span><span class="c1">// true;</span>
+<span class="linenos">36</span><span class="mi">2</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">4</span><span class="p">;</span><span class="w"> </span><span class="c1">// false;</span>
+<span class="linenos">37</span><span class="mi">4</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">4</span><span class="w"> </span><span class="c1">// true</span>
+</pre></div>
+</div>
+<p>As you can see, all of the operators above can be used to return a boolean value.</p>
 </section>
 </section>
 
@@ -347,6 +449,8 @@ evaluates a boolean value. If the evaluated boolean value is <code class="docuti
 <li><a class="reference internal" href="#introudction-to-booleans">3.3.1. Introudction to Booleans</a></li>
 <li><a class="reference internal" href="#if-statement">3.3.2. If-statement</a></li>
 <li><a class="reference internal" href="#if-else-statements">3.3.3. If-else statements</a></li>
+<li><a class="reference internal" href="#if-else-if">3.3.4. if-else-if</a></li>
+<li><a class="reference internal" href="#conditional-operators">3.3.5. Conditional Operators</a></li>
 </ul>
 </li>
 </ul>

@@ -141,6 +141,8 @@ What if you wanted only wanted to run code that only runs when a variable is ``t
 This is possible using if-else statements:
 
 .. code-block:: vala
+   :linenos:
+
    bool is_on = false;
 
    if (is_on) {
@@ -148,3 +150,109 @@ This is possible using if-else statements:
    } else {
        print ("Lights off!");
    }
+
+Let's try this out. Modfiy ``main.vala`` to look like this:
+
+.. code-block:: vala   
+   :caption: main.vala
+   :linenos:
+   
+   public static void main () {
+      bool should_print_hello = true;
+
+      if (should_print_hello) {
+         print ("Hello\n");
+      } else {
+         print ("Goodbye\n");
+      }
+   }
+
+Now compile and run your code. "Hello" will be printed.
+
+If you change the value of ``should_print_hello`` to ``false``, "Goodbye" will
+be printed instead.
+
+if-else-if
+~~~~~~~~~~
+
+We can keep adding more conditions to try using ``else if``.
+
+Update ``main.vala`` with this code below:
+
+.. code-block:: vala
+   :caption: main.vala
+   :linenos:
+
+   bool should_print_hello = true;
+   bool should_print_name = true;
+
+   if (should_print_hello && should_print_name) {
+      print ("Hello, Vala\n");
+   } else if (should_print_hello) {
+      print ("Hello\n")
+   } else if ("should_print_name") {
+      print ("Vala\n");
+   } else {
+      print ("Goodbye\n")
+   }
+
+The program will run the code in one of the ``if`` orr ``else if`` blocks if their conditions are met. 
+
+If none of the conditions are met, the program will run the code in the ``else`` block.
+
+.. note::
+
+   ``&&`` is a conditional operator called the "Logical AND" operator
+   The resulting value is ``true`` when both of the operator's (``&&``) operands are also true, otherwise, the resulting value is ``false``.
+
+   We'll talk about conditional operators more very soon.
+
+Discovering what the output of the program is based on the value of ``should_print_hello`` and ``should_print_name`` will be let as a challenge to you.
+
+Conditional Operators
+~~~~~~~~~~~~~~~~~~~~~
+
+Do you remember the logical AND (``&&``) operator? Well there are other operators like it. We'll show you a quick overview of them below:
+
+.. code-block:: vala
+   :linenos:
+
+   // Logical AND operator (&&)
+   false && false; // false
+   true && false // false
+   false && true // false;
+   true && true // true;
+
+   // Logical OR operator (||)
+   false || false; // false
+   true || false // true
+   false || true // true;
+   true || true // true;
+
+   // NOT operator (!)
+   !false // true
+   !true // false
+
+   // Equality test (==)
+   2 == 8 // false;
+   2 == 2 // true;
+
+   // Less than (<)
+   4 < 2; // false; 
+   2 < 4; // true;
+
+   // Greater than (>)
+   4 > 2; // true; 
+   2 > 4; // false;
+
+   // Less than or equal to (<=)
+   4 <= 2; // false; 
+   2 <= 4; // true;
+   4 <= 4 // true
+
+   // Greater than or equal to (>=)
+   4 >= 2; // true; 
+   2 >= 4; // false;
+   4 >= 4 // true
+
+As you can see, all of the operators above can be used to return a boolean value.
