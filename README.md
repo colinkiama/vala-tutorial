@@ -1,9 +1,9 @@
 
-# Vala Documentation
+# Vala Tutorial
 
 An unofficial modern Vala tutorial
 
-You can view the documentation here: https://colinkiama.github.io/vala-tutorial
+You can view this tutorial online here: https://colinkiama.github.io/vala-tutorial
 
 This tutorial is what I wished I had while I was learning Vala.
 This should not be treated as an official tutorial at all but I hope that it's helpful to you. 
@@ -13,6 +13,7 @@ This should not be treated as an official tutorial at all but I hope that it's h
 - `sphinx >= 4.2.0`
 - `furo` (Sphinx Theme)
 - `sphinx-copy-button` (Sphinx Extension)
+- `pygments`
 - `make`
 
 ## Getting started
@@ -49,11 +50,11 @@ You can find the details of what's included in each chapter below in the [outlin
 - [ ] Profiles
 - [ ] Coding Styles
 - [ ] Community
-- [ ] Epilogue
+- [ ] Epilogue 
 
 ## References
 
 - [Sphinx Documentation](https://www.sphinx-doc.org/en/master/contents.html)
 - [Furo Theme](https://github.com/pradyunsg/furo)
-- [reStructuredText(The format that the documentation is written in.)](https://www.writethedocs.org/guide/writing/reStructuredText/)
+- [reStructuredText (The format that this tutorial is written in.)](https://www.writethedocs.org/guide/writing/reStructuredText/)
 - [Google Technical Writing Resources](https://developers.google.com/tech-writing)

@@ -162,5 +162,5 @@ Now run and compile the code, you should see the value ``-10`` gets printed.
    The code will run fine.
 
 
-Feel free to experiment with arithmetic operations by createing your own math expressions.
+Feel free to experiment with arithmetic operations by creating your own math expressions.
 
