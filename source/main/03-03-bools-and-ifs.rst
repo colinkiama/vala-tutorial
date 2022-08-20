@@ -18,7 +18,6 @@ Instead of ``on`` and ``off``, we'd use the ``true`` and ``false`` boolean value
 We can store boolean values in variables:
 
 .. code-block:: vala
-   :linenos:
    
    bool is_on = false;
 
@@ -31,7 +30,6 @@ Setup steps:
 In ``main.vala``, write the following code:
 
 .. code-block:: vala
-   :linenos:
    :caption: main.vala
    
    public static void main () {
@@ -48,12 +46,11 @@ Let's make your program more interesting now.
 Above the ``print`` method, add declare a boolean variable set to ``false``:
 
 .. code-block:: vala
-   :linenos:
    :caption: main.vala - Boolean variable added
 
    public static void main () {
-   	   bool should_print = false;
-       print ("Hello!\n");
+      bool should_print = false;
+      print ("Hello!\n");
    }
 
 We want the program above to only print "Hello" when the value of ``should_print`` is set to ``true``. You can do this by using a control statement called an ``if-statement``.
@@ -61,7 +58,6 @@ We want the program above to only print "Hello" when the value of ``should_print
 Update ``main.vala`` so that it wraps the print call with an ``if-statement``, that checks if the value of ``should_print`` is ``true``:
 
 .. code-block:: vala
-   :linenos:
    
    public static void main () {
       bool should_print = false;
@@ -76,7 +72,6 @@ Now compile and your code.
 As you can see, nothing happens. Let's break down why:
 
 .. code-block:: vala
-   :linenos:
    :emphasize-lines: 4, 6
    
    public static void main () {
@@ -96,7 +91,6 @@ Now set the ``should_print`` variable to ``true`` then compile and run the progr
 
 .. code-block:: vala
    :caption: main.vala
-   :linenos:
    
    public static void main () {
       bool should_print = true;
@@ -114,7 +108,6 @@ Update ``main.vala`` so that the code looks like this:
 
 .. code-block:: vala
    :caption: main.vala
-   :linenos:
    
    public static void main () {
       bool should_print = true;
@@ -141,7 +134,6 @@ What if you wanted only wanted to run code that only runs when a variable is ``t
 This is possible using if-else statements:
 
 .. code-block:: vala
-   :linenos:
 
    bool is_on = false;
 
@@ -155,7 +147,6 @@ Let's try this out. Modfiy ``main.vala`` to look like this:
 
 .. code-block:: vala   
    :caption: main.vala
-   :linenos:
    
    public static void main () {
       bool should_print_hello = true;
@@ -181,7 +172,6 @@ Update ``main.vala`` with this code below:
 
 .. code-block:: vala
    :caption: main.vala
-   :linenos:
 
    bool should_print_hello = true;
    bool should_print_name = true;
@@ -189,12 +179,13 @@ Update ``main.vala`` with this code below:
    if (should_print_hello && should_print_name) {
       print ("Hello, Vala\n");
    } else if (should_print_hello) {
-      print ("Hello\n")
-   } else if ("should_print_name") {
+      print ("Hello\n");
+   } else if (should_print_name) {
       print ("Vala\n");
    } else {
-      print ("Goodbye\n")
+      print ("Goodbye\n");
    }
+
 
 The program will run the code in one of the ``if`` orr ``else if`` blocks if their conditions are met. 
 
@@ -215,7 +206,6 @@ Conditional Operators
 Do you remember the logical AND (``&&``) operator? Well there are other operators like it. We'll show you a quick overview of them below:
 
 .. code-block:: vala
-   :linenos:
 
    // Logical AND operator (&&)
    false && false; // false
