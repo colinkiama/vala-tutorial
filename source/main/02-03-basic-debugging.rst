@@ -65,7 +65,7 @@ Add back the the semicolon to the end of the line so the compiler can read that 
    :caption: main.vala
    
    public static void main () {
-       print (Hello, Wwrld);
+       print (Hello, World);
    }
 
 Now, try to build the Hello World program again.
