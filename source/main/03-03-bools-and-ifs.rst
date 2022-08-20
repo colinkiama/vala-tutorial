@@ -141,7 +141,6 @@ What if you wanted only wanted to run code that only runs when a variable is ``t
 This is possible using if-else statements:
 
 .. code-block:: vala
-   :caption: main.vala
    :linenos:
 
    bool is_on = false;
@@ -213,4 +212,47 @@ Discovering what the output of the program is based on the value of ``should_pri
 Conditional Operators
 ~~~~~~~~~~~~~~~~~~~~~
 
-Do you remember the logical AND (``&&``) operator? 
+Do you remember the logical AND (``&&``) operator? Well there are other operators like it. We'll show you a quick overview of them below:
+
+.. code-block:: vala
+   :linenos:
+
+   // Logical AND operator (&&)
+   false && false; // false
+   true && false // false
+   false && true // false;
+   true && true // true;
+
+   // Logical OR operator (||)
+   false || false; // false
+   true || false // true
+   false || true // true;
+   true || true // true;
+
+   // NOT operator (!)
+   !false // true
+   !true // false
+
+   // Equality test (==)
+   2 == 8 // false;
+   2 == 2 // true;
+
+   // Less than (<)
+   4 < 2; // false; 
+   2 < 4; // true;
+
+   // Greater than (>)
+   4 > 2; // true; 
+   2 > 4; // false;
+
+   // Less than or equal to (<=)
+   4 <= 2; // false; 
+   2 <= 4; // true;
+   4 <= 4 // true
+
+   // Greater than or equal to (>=)
+   4 >= 2; // true; 
+   2 >= 4; // false;
+   4 >= 4 // true
+
+As you can see, all of the operators above can be used to return a boolean value.
