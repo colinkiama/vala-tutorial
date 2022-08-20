@@ -34,3 +34,9 @@ Some of the benefits of variables are:
 - Easily reusing the same value multiple times in your code
 
 In the next sections of this chapter, you'll create multiple programs that use variables.
+
+.. tip::
+   
+   There may be times when you don't want to or don't need to write the data type of the variable. 
+
+   You can use the ``var`` keyword instead of the variables data type instead. When you do this, the compiler will automatically deterimine the data type of the variable for you.
