@@ -25,7 +25,7 @@ However, there as you've seen with ``if`` statements, when you have several pote
 
    string lang_name = "Vala";
 
-   print ("Programming language facts:\n\n");
+   print ("Programming Language Fact(s):\n\n");
 
    if (lang_name == "Vala") {
        print ("Vala first appeared in 2006\n");
@@ -103,6 +103,8 @@ In ``switch`` statements, the syntax for this is much more concise, making it ea
    
    string lang_name = "Vala";
    
+   print ("Programming Language Fact(s):\n\n");
+
    switch (lang_name) {
        case "Vala":
        case "C":
@@ -142,6 +144,8 @@ In ``main.vala``, write the following code:
    
    public static void main () {
        string lang_name = "Vala";
+
+       print ("Programming Language Fact(s):\n\n");
        
        switch (lang_name) {
            case "Vala":
@@ -165,6 +169,8 @@ Now, if you compile and run the code, it should print the following lines:
 
 .. code-block::
 
+   Programming Language Fact(s):
+
    C was created by Dennis Ritche
    Vala compiles to C
 
@@ -180,8 +186,9 @@ the code looks like this below:
 
 .. code-block:: vala
    :caption: main.vala
+   :emphasize-lines: 1-6 
 
-   public enum Languages {
+   public enum Language {
        VALA, // Vala
        C, // C
        RUST, // Rust
@@ -190,6 +197,8 @@ the code looks like this below:
    
    public static void main () {
        string lang_name = "Vala";
+
+       print ("Programming Language Fact(s):\n\n");
    
        switch (lang_name) {
            case "Vala":
@@ -208,4 +217,56 @@ the code looks like this below:
                break;
        }
    }
+
+By default, each field in the ``Language`` enum has the value of an integer number, starting from ``0`` ascending.
+That is how enums are handled in the program however as humans, we can ignore that and simply take advantage of the 
+fact that we can use identifiers to specify a value.
+
+Rather than using literal values, we can use enums to specify the exactly value that we want. Enums are
+checked and recognised by the compiler and they are included in autocomplete suggestions. Because of this, using enums
+can reduce potential mistakes we can make in our code.
+
+They also work well with ``switch`` statements. Update ``main.vala`` to look like this below:
+
+.. code-block:: vala
+   :caption: main.vala
    
+   public enum Language {
+       VALA, // Vala
+       C, // C
+       RUST, // Rust
+       CPP, // C++
+   }
+   
+   public static void main () {
+       Language chosen_language = Language.VALA;
+   
+       print ("Programming Language Fact(s):\n\n");
+
+       switch (chosen_language) {
+           case Language.VALA:
+           case Language.C:
+               print ("C was created by Dennis Ritche\n");
+               print ("Vala compiles to C\n");
+               break;
+           case Language.RUST:
+               print ("Rust's Mascot is a red crab\n");
+               break;
+           case Language.CPP:
+               print ("First editiion of C++ was released around since 1985\n");
+               break;
+           default:
+               print ("Goodbye\n");
+               break;
+       }
+   }
+
+If you compile and run the program now, you should still get the same output:
+
+.. code-block::
+
+   Programming Language Fact(s):
+
+   C was created by Dennis Ritche
+   Vala compiles to C
+
