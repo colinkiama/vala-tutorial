@@ -24,3 +24,4 @@ In this chapter we will:
    Numbers <03-02-numbers>
    Booleans and if-statements <03-03-bools-and-ifs>
    Enums and Switch Statements <03-04-enums-and-switch-statements>
+   Loops <03-05-loops>

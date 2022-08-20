@@ -21,9 +21,7 @@ We can store boolean values in variables:
    
    bool is_on = false;
 
-Now, you'll write some actual code involving booleans.
-
-Setup steps:
+Now, you'll write some actual code involving booleans. You'll need to create a new directory first:
 
 1. Create a new directory called ``Booleans`` under your ``ValaProjects`` directory.
 2. Create a new file called ``main.vala`` inside the ``Booleans`` directory you created.

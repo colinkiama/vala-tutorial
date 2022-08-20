@@ -130,9 +130,9 @@ This is the the ``switch`` statement's **fallthrough** behaviour.
 Enums
 -----
 
-Now, you'll write some actual code involving ``switch`` statements and value type called an Enumeration (``enum``).
+Now, you'll write some actual code involving ``switch`` statements and value type called an Enumeration (``enum``):
 
-Setup steps:
+First, you'll need to create a new directory for the code you'll write in this section:
 
 1. Create a new directory called ``Switch`` under your ``ValaProjects`` directory.
 2. Create a new file called ``main.vala`` inside the ``Switch`` directory you created.
