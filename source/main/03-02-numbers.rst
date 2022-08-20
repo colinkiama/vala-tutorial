@@ -39,8 +39,8 @@ You can print the value of ``num`` by adding using the ``print`` method. Add thi
    :emphasize-lines: 3
 
    public static void main () {
-      int num = 42;
-      print ("Value of num: %d\n", num);
+       int num = 42;
+       print ("Value of num: %d\n", num);
    }
 
 Now, compile your code in ``main.vala`` and run the generated program. You'll see the following output:
@@ -114,36 +114,36 @@ Replace all the code in ``main.vala`` with this code below:
    :caption: main.vala - Numeric data type examples
 
    public static void main () {
-      // Addition: 
-      int sum = 5 + 5; // sum = 10
+       // Addition: 
+       int sum = 5 + 5; // sum = 10
 
-      // Subtraction: difference = 5
-      int difference = 12-7; // difference = 5
+       // Subtraction: difference = 5
+       int difference = 12-7; // difference = 5
 
-      // Multiplication: product = 4
-      int product = 2 * 2; // product = 4
+       // Multiplication: product = 4
+       int product = 2 * 2; // product = 4
 
-      // Division:
-      float quotient = 64.2f / 2f; // quotient = 32.1
-      double second_quotient = 99.9 / 11.1; // quotient = 9.0
+       // Division:
+       float quotient = 64.2f / 2f; // quotient = 32.1
+       double second_quotient = 99.9 / 11.1; // quotient = 9.0
 
-      // Integer division results in the decimal part of the quotient not being 
-      // included:
-      int floored_quotient = 16 / 5; // floored_quotient = 3
+       // Integer division results in the decimal part of the quotient not being 
+       // included:
+       int floored_quotient = 16 / 5; // floored_quotient = 3
 
-      // Modulus
-      int remainder = 1 % 2; // remainder = 1
-      int no_remainder = 2 % 2; // no_reminader = 0
+       // Modulus
+       int remainder = 1 % 2; // remainder = 1
+       int no_remainder = 2 % 2; // no_reminader = 0
 
-      // Reusing variables
+       // Reusing variables
 
-      int changing_num = 1;
-      changing_num = changing_num + 1; 
-      changing_num = changing_num - sum;
-      changing_num = changing_num * difference; 
-      changing_num = changing_num / product;
+       int changing_num = 1;
+       changing_num = changing_num + 1; 
+       changing_num = changing_num - sum;
+       changing_num = changing_num * difference; 
+       changing_num = changing_num / product;
 
-      print ("Changing number: %d\n", changing_num);
+       print ("Changing number: %d\n", changing_num);
    }
 
 Can you guess the value of ``changing_num`` that gets printed?
