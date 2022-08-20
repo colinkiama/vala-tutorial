@@ -82,7 +82,7 @@ Let's break down the anatomy of the program you've just created so that you can 
    :emphasize-lines: 1, 3
 
    public static void main () {
-      print ("Hello, world!\n");
+       print ("Hello, world!\n");
    }
 
 The highlighted lines above define a **method** in Vala; A method is a block of code that contain code for the program to execute when called.
@@ -99,7 +99,7 @@ The ``main`` **method** contains the following code:
    :emphasize-lines: 2
    
    public static void main () {
-      print ("Hello, world!\n");
+       print ("Hello, world!\n");
    }
 
 The highlighted line above line prints the "Hello, world!" text on the screen.

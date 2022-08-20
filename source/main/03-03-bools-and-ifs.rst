@@ -50,8 +50,8 @@ Above the ``print`` method, add declare a boolean variable set to ``false``:
    :caption: main.vala - Boolean variable added
 
    public static void main () {
-      bool should_print = false;
-      print ("Hello!\n");
+       bool should_print = false;
+       print ("Hello!\n");
    }
 
 We want the program above to only print "Hello" when the value of ``should_print`` is set to ``true``. You can do this by using a control statement called an ``if-statement``.
@@ -61,11 +61,11 @@ Update ``main.vala`` so that it wraps the print call with an ``if-statement``, t
 .. code-block:: vala
    
    public static void main () {
-      bool should_print = false;
+       bool should_print = false;
 
-      if (should_print == true) {
-         print ("Hello!\n");
-      }
+       if (should_print == true) {
+          print ("Hello!\n");
+       }
    }
 
 Now compile and your code.
@@ -76,11 +76,11 @@ As you can see, nothing happens. Let's break down why:
    :emphasize-lines: 4, 6
    
    public static void main () {
-      bool should_print = false;
+       bool should_print = false;
 
-      if (should_print == true) {
-         print ("Hello!\n");
-      }
+       if (should_print == true) {
+          print ("Hello!\n");
+       }
    }
 
 The highlighted lines are the ``if-statement``. 
@@ -94,11 +94,11 @@ Now set the ``should_print`` variable to ``true`` then compile and run the progr
    :caption: main.vala
    
    public static void main () {
-      bool should_print = true;
+       bool should_print = true;
 
-      if (should_print == true) {
-         print ("Hello!\n");
-      }
+       if (should_print == true) {
+           print ("Hello!\n");
+       }
    }
 
 The program above will print "Hello!".
@@ -111,11 +111,11 @@ Update ``main.vala`` so that the code looks like this:
    :caption: main.vala
    
    public static void main () {
-      bool should_print = true;
+       bool should_print = true;
 
-      if (should_print) {
-         print ("Hello!\n");
-      }
+       if (should_print) {
+          print ("Hello!\n");
+       }
    }
 
 .. warning::
@@ -150,13 +150,13 @@ Let's try this out. Modfiy ``main.vala`` to look like this:
    :caption: main.vala
    
    public static void main () {
-      bool should_print_hello = true;
+       bool should_print_hello = true;
 
-      if (should_print_hello) {
-         print ("Hello\n");
-      } else {
-         print ("Goodbye\n");
-      }
+       if (should_print_hello) {
+          print ("Hello\n");
+       } else {
+          print ("Goodbye\n");
+       }
    }
 
 Now compile and run your code. "Hello" will be printed.
@@ -178,13 +178,13 @@ Update ``main.vala`` with this code below:
    bool should_print_name = true;
 
    if (should_print_hello && should_print_name) {
-      print ("Hello, Vala\n");
+       print ("Hello, Vala\n");
    } else if (should_print_hello) {
-      print ("Hello\n");
+       print ("Hello\n");
    } else if (should_print_name) {
-      print ("Vala\n");
+       print ("Vala\n");
    } else {
-      print ("Goodbye\n");
+       print ("Goodbye\n");
    }
 
 

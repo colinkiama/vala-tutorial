@@ -7,8 +7,8 @@ In this section we'll:
 - Introudce enum values
 - Showcase how switch statements and enums work well togeter
 
-Switch Statements
------------------
+Introducing Switch Statements
+-----------------------------
 
 In the last section, we introuduced ``if`` statements:
 
@@ -16,7 +16,7 @@ In the last section, we introuduced ``if`` statements:
    
    bool is_on = true;
    if (is_on) {
-      print ("The light bulb is on\n");
+       print ("The light bulb is on\n");
    }
 
 However, there as you've seen with ``if`` statements, when you have several potential branches, it can become quite cumbersome to write:
@@ -28,7 +28,7 @@ However, there as you've seen with ``if`` statements, when you have several pote
    print ("Programming language facts:\n\n");
 
    if (lang_name == "Vala") {
-      print ("Vala first appeared in 2006\n");
+       print ("Vala first appeared in 2006\n");
    } else if (lang_name == "Rust") {
        print ("Rust's Mascot is a red crab\n");
    } else if (lang_name == "C++") {
@@ -48,21 +48,21 @@ Rather than writing out the eqaulity check, for the same variable, every time, y
    string lang_name = "Vala";
    
    switch (lang_name) {
-      case "Vala":
-         print ("Vala first appeared in 2006\n");
-         break;
-      case "Rust":
-         print ("Rust's Mascot is a red crab\n");
-         break;
-      case "C++":
-         print ("First editiion of C++ was released around since 1985\n");
-         break;
-      case "C":
-         print ("C was created by Dennis Ritche\n")
-         break;
-      default:
-         print ("Goodbye\n");
-         break;
+       case "Vala":
+           print ("Vala first appeared in 2006\n");
+           break;
+       case "Rust":
+           print ("Rust's Mascot is a red crab\n");
+           break;
+       case "C++":
+           print ("First editiion of C++ was released around since 1985\n");
+           break;
+       case "C":
+           print ("C was created by Dennis Ritche\n")
+           break;
+       default:
+           print ("Goodbye\n");
+           break;
    }
 
 .. tip::
@@ -80,8 +80,8 @@ To signal the end of the code to run, a ``break`` statement is used.
 
 ``default`` beahves like ``else``. It runs when no other cases match the value passed in. 
 
-Switch Fallthrough
-~~~~~~~~~~~~~~~~~~
+Taking Advantage of the Switch Fallthrough Behaviour
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 In ``if`` statements, to run the same block of code based on a set of matching values, you would do somethhing like this:
 
@@ -90,8 +90,8 @@ In ``if`` statements, to run the same block of code based on a set of matching v
    string lang_name = "Vala";
    
    if (lang_name == "Vala" || lang_name == "C") {
-      print ("C was created by Dennis Ritche\n")
-      print ("Vala compiles to C\n");
+       print ("C was created by Dennis Ritche\n")
+       print ("Vala compiles to C\n");
    }
 
 As you can imagine, this can become pretty cumbersome to write as you add more matching values.
@@ -104,24 +104,26 @@ In ``switch`` statements, the syntax for this is much more concise, making it ea
    string lang_name = "Vala";
    
    switch (lang_name) {
-      case "Vala":
-      case "C":
-         print ("C was created by Dennis Ritche\n")
-         print ("Vala compiles to C\n");
-         break;
-      case "Rust":
-         print ("Rust's Mascot is a red crab\n");
-         break;
-      case "C++":
-         print ("First editiion of C++ was released around since 1985\n");
-         break;
-      default:
-         print ("Goodbye\n");
-         break;
+       case "Vala":
+       case "C":
+           print ("C was created by Dennis Ritche\n")
+           print ("Vala compiles to C\n");
+           break;
+       case "Rust":
+           print ("Rust's Mascot is a red crab\n");
+           break;
+       case "C++":
+           print ("First editiion of C++ was released around since 1985\n");
+           break;
+       default:
+           print ("Goodbye\n");
+           break;
    }
 
 The "Vala" ``case`` has the "C" ``case`` directly under it. It runs the section of code under the "C" ``case``.
-The same code would run if ``lang_name`` was set to "C" too. This is called the ``switch`` statement's **fallthrough** behaviour.
+The same code would run if ``lang_name`` was set to "C" too. 
+
+This is the the ``switch`` statement's **fallthrough** behaviour.
 
 Enums
 -----
@@ -139,29 +141,71 @@ In ``main.vala``, write the following code:
    :caption: main.vala
    
    public static void main () {
-      string lang_name = "Vala";
-      
-      switch (lang_name) {
-         case "Vala":
-         case "C":
-            print ("C was created by Dennis Ritche\n")
-            print ("Vala compiles to C\n");
-            break;
-         case "Rust":
-            print ("Rust's Mascot is a red crab\n");
-            break;
-         case "C++":
-            print ("First editiion of C++ was released around since 1985\n");
-            break;
-         default:
-            print ("Goodbye\n");
-            break;
+       string lang_name = "Vala";
+       
+       switch (lang_name) {
+           case "Vala":
+           case "C":
+               print ("C was created by Dennis Ritche\n");
+               print ("Vala compiles to C\n");
+               break;
+           case "Rust":
+               print ("Rust's Mascot is a red crab\n");
+               break;
+           case "C++":
+               print ("First editiion of C++ was released around since 1985\n");
+               break;
+           default:
+               print ("Goodbye\n");
+               break;
+       }
    }
 
 Now, if you compile and run the code, it should print the following lines:
 
 .. code-block::
 
-    C was created by Dennis Ritche
-    Vala compiles to C
+   C was created by Dennis Ritche
+   Vala compiles to C
 
+Writing your first enum
+~~~~~~~~~~~~~~~~~~~~~~~
+
+In our code, ``lang_name`` can be reduced to a specific set of related, mutually exclusive values.
+
+We can take advantage of this by enumerating these values by creating a new ``enum``.
+
+Add an ``enum`` declaration to the top of ``main.vala`` so that
+the code looks like this below:
+
+.. code-block:: vala
+   :caption: main.vala
+
+   public enum Languages {
+       VALA, // Vala
+       C, // C
+       RUST, // Rust
+       CPP, // C++
+   }
+   
+   public static void main () {
+       string lang_name = "Vala";
+   
+       switch (lang_name) {
+           case "Vala":
+           case "C":
+               print ("C was created by Dennis Ritche\n");
+               print ("Vala compiles to C\n");
+               break;
+           case "Rust":
+               print ("Rust's Mascot is a red crab\n");
+               break;
+           case "C++":
+               print ("First editiion of C++ was released around since 1985\n");
+               break;
+           default:
+               print ("Goodbye\n");
+               break;
+       }
+   }
+   
