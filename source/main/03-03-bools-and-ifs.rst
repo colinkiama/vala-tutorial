@@ -1,5 +1,5 @@
 Booleans and if-statements
---------------------------
+==========================
 
 In this section we'll:
 
@@ -7,7 +7,7 @@ In this section we'll:
 - Introuduce a way to change the flow of a program based on a boolean value
 
 Introudction to Booleans
-~~~~~~~~~~~~~~~~~~~~~~~~
+------------------------
 
 Light bulbs ultimately have two, mutually-exclusive states: ``on`` and ``off``. When a light bulb is ``on``, it has emits light. When a light bulb is ``off``, there is no light.
 
@@ -24,6 +24,7 @@ We can store boolean values in variables:
 Now, you'll write some actual code involving booleans.
 
 Setup steps:
+
 1. Create a new directory called ``Booleans`` under your ``ValaProjects`` directory.
 2. Create a new file called ``main.vala`` inside the ``Booleans`` directory you created.
 
@@ -39,7 +40,7 @@ In ``main.vala``, write the following code:
 If you compile and run the program, it will simply print "Hello!".
 
 If-statement
-~~~~~~~~~~~~
+------------
 
 Let's make your program more interesting now.
 
@@ -127,7 +128,7 @@ Update ``main.vala`` so that the code looks like this:
    2. The if statement doesn't read well: "If first name".
 
 If-else statements
-~~~~~~~~~~~~~~~~~~ 
+------------------
 
 What if you wanted only wanted to run code that only runs when a variable is ``true`` and a different piece of code to run when that same variable is ``false``.
 
@@ -163,8 +164,8 @@ Now compile and run your code. "Hello" will be printed.
 If you change the value of ``should_print_hello`` to ``false``, "Goodbye" will
 be printed instead.
 
-if-else-if
-~~~~~~~~~~
+if-else-if statements
+---------------------
 
 We can keep adding more conditions to try using ``else if``.
 
@@ -201,7 +202,7 @@ If none of the conditions are met, the program will run the code in the ``else``
 Discovering what the output of the program is based on the value of ``should_print_hello`` and ``should_print_name`` will be let as a challenge to you.
 
 Conditional Operators
-~~~~~~~~~~~~~~~~~~~~~
+---------------------
 
 Do you remember the logical AND (``&&``) operator? Well there are other operators like it. We'll show you a quick overview of them below:
 
