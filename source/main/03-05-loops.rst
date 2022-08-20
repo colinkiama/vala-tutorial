@@ -123,7 +123,6 @@ To recap, you've learned:
 - How to change the flow of programs using control statements such as: ``if`` and ``switch``.
 - How to perform loops using loop statements such as ``while`` and ``for``.
 
-
 The next chapter will be a project that will use some of the topics you've learned so far.
 
 Now would be a good idea to revise and experiment with the topics we've covered in this tutorial up until now to improve your understanding with them.
