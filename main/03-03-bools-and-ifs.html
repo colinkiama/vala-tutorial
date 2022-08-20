@@ -201,7 +201,7 @@
 <p>Sometimes, in our programs, we need to represent two mutually exclusive states. The boolean data type (<code class="docutils literal notranslate"><span class="pre">bool</span></code>) is how you we can do this.</p>
 <p>Instead of <code class="docutils literal notranslate"><span class="pre">on</span></code> and <code class="docutils literal notranslate"><span class="pre">off</span></code>, we’d use the <code class="docutils literal notranslate"><span class="pre">true</span></code> and <code class="docutils literal notranslate"><span class="pre">false</span></code> boolean values to represent two mutually-exclusive states.</p>
 <p>We can store boolean values in variables:</p>
-<div class="highlight-vala notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="kt">bool</span><span class="w"> </span><span class="n">is_on</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span><span class="w"></span>
+<div class="highlight-vala notranslate"><div class="highlight"><pre><span></span><span class="kt">bool</span><span class="w"> </span><span class="n">is_on</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span><span class="w"></span>
 </pre></div>
 </div>
 <p>Now, you’ll write some actual code involving booleans.</p>
@@ -211,9 +211,9 @@
 <p>In <code class="docutils literal notranslate"><span class="pre">main.vala</span></code>, write the following code:</p>
 <div class="literal-block-wrapper docutils container" id="id1">
 <div class="code-block-caption"><span class="caption-text">main.vala</span><a class="headerlink" href="#id1" title="Permalink to this code">#</a></div>
-<div class="highlight-vala notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">main</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="linenos">2</span><span class="w">    </span><span class="n">print</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;Hello!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span><span class="w"></span>
-<span class="linenos">3</span><span class="p">}</span><span class="w"></span>
+<div class="highlight-vala notranslate"><div class="highlight"><pre><span></span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">main</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">print</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;Hello!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 </div>
@@ -225,33 +225,33 @@
 <p>Above the <code class="docutils literal notranslate"><span class="pre">print</span></code> method, add declare a boolean variable set to <code class="docutils literal notranslate"><span class="pre">false</span></code>:</p>
 <div class="literal-block-wrapper docutils container" id="id2">
 <div class="code-block-caption"><span class="caption-text">main.vala - Boolean variable added</span><a class="headerlink" href="#id2" title="Permalink to this code">#</a></div>
-<div class="highlight-vala notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">main</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="linenos">2</span><span class="w">        </span><span class="kt">bool</span><span class="w"> </span><span class="n">should_print</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span><span class="w"></span>
-<span class="linenos">3</span><span class="w">    </span><span class="n">print</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;Hello!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span><span class="w"></span>
-<span class="linenos">4</span><span class="p">}</span><span class="w"></span>
+<div class="highlight-vala notranslate"><div class="highlight"><pre><span></span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">main</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">   </span><span class="kt">bool</span><span class="w"> </span><span class="n">should_print</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span><span class="w"></span>
+<span class="w">   </span><span class="n">print</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;Hello!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 </div>
 <p>We want the program above to only print “Hello” when the value of <code class="docutils literal notranslate"><span class="pre">should_print</span></code> is set to <code class="docutils literal notranslate"><span class="pre">true</span></code>. You can do this by using a control statement called an <code class="docutils literal notranslate"><span class="pre">if-statement</span></code>.</p>
 <p>Update <code class="docutils literal notranslate"><span class="pre">main.vala</span></code> so that it wraps the print call with an <code class="docutils literal notranslate"><span class="pre">if-statement</span></code>, that checks if the value of <code class="docutils literal notranslate"><span class="pre">should_print</span></code> is <code class="docutils literal notranslate"><span class="pre">true</span></code>:</p>
-<div class="highlight-vala notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">main</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="linenos">2</span><span class="w">   </span><span class="kt">bool</span><span class="w"> </span><span class="n">should_print</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span><span class="w"></span>
-<span class="linenos">3</span>
-<span class="linenos">4</span><span class="w">   </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">should_print</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nb">true</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="linenos">5</span><span class="w">      </span><span class="n">print</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;Hello!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span><span class="w"></span>
-<span class="linenos">6</span><span class="w">   </span><span class="p">}</span><span class="w"></span>
-<span class="linenos">7</span><span class="p">}</span><span class="w"></span>
+<div class="highlight-vala notranslate"><div class="highlight"><pre><span></span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">main</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">   </span><span class="kt">bool</span><span class="w"> </span><span class="n">should_print</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">   </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">should_print</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nb">true</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="n">print</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;Hello!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">   </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 <p>Now compile and your code.</p>
 <p>As you can see, nothing happens. Let’s break down why:</p>
-<div class="highlight-vala notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">main</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="linenos">2</span><span class="w">   </span><span class="kt">bool</span><span class="w"> </span><span class="n">should_print</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span><span class="w"></span>
-<span class="linenos">3</span>
-<span class="hll"><span class="linenos">4</span><span class="w">   </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">should_print</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nb">true</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-</span><span class="linenos">5</span><span class="w">      </span><span class="n">print</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;Hello!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span><span class="w"></span>
-<span class="hll"><span class="linenos">6</span><span class="w">   </span><span class="p">}</span><span class="w"></span>
-</span><span class="linenos">7</span><span class="p">}</span><span class="w"></span>
+<div class="highlight-vala notranslate"><div class="highlight"><pre><span></span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">main</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">   </span><span class="kt">bool</span><span class="w"> </span><span class="n">should_print</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span><span class="w"></span>
+
+<span class="hll"><span class="w">   </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">should_print</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nb">true</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+</span><span class="w">      </span><span class="n">print</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;Hello!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="hll"><span class="w">   </span><span class="p">}</span><span class="w"></span>
+</span><span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 <p>The highlighted lines are the <code class="docutils literal notranslate"><span class="pre">if-statement</span></code>.
@@ -260,13 +260,13 @@ evaluates a boolean value. If the evaluated boolean value is <code class="docuti
 <p>Now set the <code class="docutils literal notranslate"><span class="pre">should_print</span></code> variable to <code class="docutils literal notranslate"><span class="pre">true</span></code> then compile and run the program again:</p>
 <div class="literal-block-wrapper docutils container" id="id3">
 <div class="code-block-caption"><span class="caption-text">main.vala</span><a class="headerlink" href="#id3" title="Permalink to this code">#</a></div>
-<div class="highlight-vala notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">main</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="linenos">2</span><span class="w">   </span><span class="kt">bool</span><span class="w"> </span><span class="n">should_print</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">true</span><span class="p">;</span><span class="w"></span>
-<span class="linenos">3</span>
-<span class="linenos">4</span><span class="w">   </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">should_print</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nb">true</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="linenos">5</span><span class="w">      </span><span class="n">print</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;Hello!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span><span class="w"></span>
-<span class="linenos">6</span><span class="w">   </span><span class="p">}</span><span class="w"></span>
-<span class="linenos">7</span><span class="p">}</span><span class="w"></span>
+<div class="highlight-vala notranslate"><div class="highlight"><pre><span></span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">main</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">   </span><span class="kt">bool</span><span class="w"> </span><span class="n">should_print</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">true</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">   </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">should_print</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nb">true</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="n">print</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;Hello!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">   </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 </div>
@@ -275,13 +275,13 @@ evaluates a boolean value. If the evaluated boolean value is <code class="docuti
 <p>Update <code class="docutils literal notranslate"><span class="pre">main.vala</span></code> so that the code looks like this:</p>
 <div class="literal-block-wrapper docutils container" id="id4">
 <div class="code-block-caption"><span class="caption-text">main.vala</span><a class="headerlink" href="#id4" title="Permalink to this code">#</a></div>
-<div class="highlight-vala notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">main</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="linenos">2</span><span class="w">   </span><span class="kt">bool</span><span class="w"> </span><span class="n">should_print</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">true</span><span class="p">;</span><span class="w"></span>
-<span class="linenos">3</span>
-<span class="linenos">4</span><span class="w">   </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">should_print</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="linenos">5</span><span class="w">      </span><span class="n">print</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;Hello!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span><span class="w"></span>
-<span class="linenos">6</span><span class="w">   </span><span class="p">}</span><span class="w"></span>
-<span class="linenos">7</span><span class="p">}</span><span class="w"></span>
+<div class="highlight-vala notranslate"><div class="highlight"><pre><span></span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">main</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">   </span><span class="kt">bool</span><span class="w"> </span><span class="n">should_print</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">true</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">   </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">should_print</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="n">print</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;Hello!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">   </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 </div>
@@ -299,27 +299,27 @@ evaluates a boolean value. If the evaluated boolean value is <code class="docuti
 <h2><span class="section-number">3.3.3. </span>If-else statements<a class="headerlink" href="#if-else-statements" title="Permalink to this heading">#</a></h2>
 <p>What if you wanted only wanted to run code that only runs when a variable is <code class="docutils literal notranslate"><span class="pre">true</span></code> and a different piece of code to run when that same variable is <code class="docutils literal notranslate"><span class="pre">false</span></code>.</p>
 <p>This is possible using if-else statements:</p>
-<div class="highlight-vala notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="kt">bool</span><span class="w"> </span><span class="n">is_on</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span><span class="w"></span>
-<span class="linenos">2</span>
-<span class="linenos">3</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">is_on</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="linenos">4</span><span class="w">    </span><span class="n">print</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;Lights on!&quot;</span><span class="p">);</span><span class="w"></span>
-<span class="linenos">5</span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="linenos">6</span><span class="w">    </span><span class="n">print</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;Lights off!&quot;</span><span class="p">);</span><span class="w"></span>
-<span class="linenos">7</span><span class="p">}</span><span class="w"></span>
+<div class="highlight-vala notranslate"><div class="highlight"><pre><span></span><span class="kt">bool</span><span class="w"> </span><span class="n">is_on</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span><span class="w"></span>
+
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">is_on</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">print</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;Lights on!&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">print</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;Lights off!&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 <p>Let’s try this out. Modfiy <code class="docutils literal notranslate"><span class="pre">main.vala</span></code> to look like this:</p>
 <div class="literal-block-wrapper docutils container" id="id5">
 <div class="code-block-caption"><span class="caption-text">main.vala</span><a class="headerlink" href="#id5" title="Permalink to this code">#</a></div>
-<div class="highlight-vala notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">main</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="linenos">2</span><span class="w">   </span><span class="kt">bool</span><span class="w"> </span><span class="n">should_print_hello</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">true</span><span class="p">;</span><span class="w"></span>
-<span class="linenos">3</span>
-<span class="linenos">4</span><span class="w">   </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">should_print_hello</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="linenos">5</span><span class="w">      </span><span class="n">print</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;Hello</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span><span class="w"></span>
-<span class="linenos">6</span><span class="w">   </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="linenos">7</span><span class="w">      </span><span class="n">print</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;Goodbye</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span><span class="w"></span>
-<span class="linenos">8</span><span class="w">   </span><span class="p">}</span><span class="w"></span>
-<span class="linenos">9</span><span class="p">}</span><span class="w"></span>
+<div class="highlight-vala notranslate"><div class="highlight"><pre><span></span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">main</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">   </span><span class="kt">bool</span><span class="w"> </span><span class="n">should_print_hello</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">true</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">   </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">should_print_hello</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="n">print</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;Hello</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">   </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="n">print</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;Goodbye</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">   </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 </div>
@@ -333,18 +333,18 @@ be printed instead.</p>
 <p>Update <code class="docutils literal notranslate"><span class="pre">main.vala</span></code> with this code below:</p>
 <div class="literal-block-wrapper docutils container" id="id6">
 <div class="code-block-caption"><span class="caption-text">main.vala</span><a class="headerlink" href="#id6" title="Permalink to this code">#</a></div>
-<div class="highlight-vala notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="kt">bool</span><span class="w"> </span><span class="n">should_print_hello</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">true</span><span class="p">;</span><span class="w"></span>
-<span class="linenos"> 2</span><span class="kt">bool</span><span class="w"> </span><span class="n">should_print_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">true</span><span class="p">;</span><span class="w"></span>
-<span class="linenos"> 3</span>
-<span class="linenos"> 4</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">should_print_hello</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">should_print_name</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="linenos"> 5</span><span class="w">   </span><span class="n">print</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;Hello, Vala</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span><span class="w"></span>
-<span class="linenos"> 6</span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">should_print_hello</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="linenos"> 7</span><span class="w">   </span><span class="n">print</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;Hello</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">)</span><span class="w"></span>
-<span class="linenos"> 8</span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;should_print_name&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="linenos"> 9</span><span class="w">   </span><span class="n">print</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;Vala</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span><span class="w"></span>
-<span class="linenos">10</span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="linenos">11</span><span class="w">   </span><span class="n">print</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;Goodbye</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">)</span><span class="w"></span>
-<span class="linenos">12</span><span class="p">}</span><span class="w"></span>
+<div class="highlight-vala notranslate"><div class="highlight"><pre><span></span><span class="kt">bool</span><span class="w"> </span><span class="n">should_print_hello</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">true</span><span class="p">;</span><span class="w"></span>
+<span class="kt">bool</span><span class="w"> </span><span class="n">should_print_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">true</span><span class="p">;</span><span class="w"></span>
+
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">should_print_hello</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">should_print_name</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">   </span><span class="n">print</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;Hello, Vala</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">should_print_hello</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">   </span><span class="n">print</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;Hello</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">should_print_name</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">   </span><span class="n">print</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;Vala</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">   </span><span class="n">print</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;Goodbye</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 </div>
@@ -361,43 +361,43 @@ The resulting value is <code class="docutils literal notranslate"><span class="p
 <section id="conditional-operators">
 <h2><span class="section-number">3.3.5. </span>Conditional Operators<a class="headerlink" href="#conditional-operators" title="Permalink to this heading">#</a></h2>
 <p>Do you remember the logical AND (<code class="docutils literal notranslate"><span class="pre">&amp;&amp;</span></code>) operator? Well there are other operators like it. We’ll show you a quick overview of them below:</p>
-<div class="highlight-vala notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1">// Logical AND operator (&amp;&amp;)</span>
-<span class="linenos"> 2</span><span class="nb">false</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span><span class="w"> </span><span class="c1">// false</span>
-<span class="linenos"> 3</span><span class="nb">true</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">false</span><span class="w"> </span><span class="c1">// false</span>
-<span class="linenos"> 4</span><span class="nb">false</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="c1">// false;</span>
-<span class="linenos"> 5</span><span class="nb">true</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="c1">// true;</span>
-<span class="linenos"> 6</span>
-<span class="linenos"> 7</span><span class="c1">// Logical OR operator (||)</span>
-<span class="linenos"> 8</span><span class="nb">false</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span><span class="w"> </span><span class="c1">// false</span>
-<span class="linenos"> 9</span><span class="nb">true</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="nb">false</span><span class="w"> </span><span class="c1">// true</span>
-<span class="linenos">10</span><span class="nb">false</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="c1">// true;</span>
-<span class="linenos">11</span><span class="nb">true</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="c1">// true;</span>
-<span class="linenos">12</span>
-<span class="linenos">13</span><span class="c1">// NOT operator (!)</span>
-<span class="linenos">14</span><span class="o">!</span><span class="nb">false</span><span class="w"> </span><span class="c1">// true</span>
-<span class="linenos">15</span><span class="o">!</span><span class="nb">true</span><span class="w"> </span><span class="c1">// false</span>
-<span class="linenos">16</span>
-<span class="linenos">17</span><span class="c1">// Equality test (==)</span>
-<span class="linenos">18</span><span class="mi">2</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">8</span><span class="w"> </span><span class="c1">// false;</span>
-<span class="linenos">19</span><span class="mi">2</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="c1">// true;</span>
-<span class="linenos">20</span>
-<span class="linenos">21</span><span class="c1">// Less than (&lt;)</span>
-<span class="linenos">22</span><span class="mi">4</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="w"> </span><span class="c1">// false;</span>
-<span class="linenos">23</span><span class="mi">2</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">4</span><span class="p">;</span><span class="w"> </span><span class="c1">// true;</span>
-<span class="linenos">24</span>
-<span class="linenos">25</span><span class="c1">// Greater than (&gt;)</span>
-<span class="linenos">26</span><span class="mi">4</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="w"> </span><span class="c1">// true;</span>
-<span class="linenos">27</span><span class="mi">2</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">4</span><span class="p">;</span><span class="w"> </span><span class="c1">// false;</span>
-<span class="linenos">28</span>
-<span class="linenos">29</span><span class="c1">// Less than or equal to (&lt;=)</span>
-<span class="linenos">30</span><span class="mi">4</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="w"> </span><span class="c1">// false;</span>
-<span class="linenos">31</span><span class="mi">2</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">4</span><span class="p">;</span><span class="w"> </span><span class="c1">// true;</span>
-<span class="linenos">32</span><span class="mi">4</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">4</span><span class="w"> </span><span class="c1">// true</span>
-<span class="linenos">33</span>
-<span class="linenos">34</span><span class="c1">// Greater than or equal to (&gt;=)</span>
-<span class="linenos">35</span><span class="mi">4</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="w"> </span><span class="c1">// true;</span>
-<span class="linenos">36</span><span class="mi">2</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">4</span><span class="p">;</span><span class="w"> </span><span class="c1">// false;</span>
-<span class="linenos">37</span><span class="mi">4</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">4</span><span class="w"> </span><span class="c1">// true</span>
+<div class="highlight-vala notranslate"><div class="highlight"><pre><span></span><span class="c1">// Logical AND operator (&amp;&amp;)</span>
+<span class="nb">false</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span><span class="w"> </span><span class="c1">// false</span>
+<span class="nb">true</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">false</span><span class="w"> </span><span class="c1">// false</span>
+<span class="nb">false</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="c1">// false;</span>
+<span class="nb">true</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="c1">// true;</span>
+
+<span class="c1">// Logical OR operator (||)</span>
+<span class="nb">false</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span><span class="w"> </span><span class="c1">// false</span>
+<span class="nb">true</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="nb">false</span><span class="w"> </span><span class="c1">// true</span>
+<span class="nb">false</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="c1">// true;</span>
+<span class="nb">true</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="c1">// true;</span>
+
+<span class="c1">// NOT operator (!)</span>
+<span class="o">!</span><span class="nb">false</span><span class="w"> </span><span class="c1">// true</span>
+<span class="o">!</span><span class="nb">true</span><span class="w"> </span><span class="c1">// false</span>
+
+<span class="c1">// Equality test (==)</span>
+<span class="mi">2</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">8</span><span class="w"> </span><span class="c1">// false;</span>
+<span class="mi">2</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="c1">// true;</span>
+
+<span class="c1">// Less than (&lt;)</span>
+<span class="mi">4</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="w"> </span><span class="c1">// false;</span>
+<span class="mi">2</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">4</span><span class="p">;</span><span class="w"> </span><span class="c1">// true;</span>
+
+<span class="c1">// Greater than (&gt;)</span>
+<span class="mi">4</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="w"> </span><span class="c1">// true;</span>
+<span class="mi">2</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">4</span><span class="p">;</span><span class="w"> </span><span class="c1">// false;</span>
+
+<span class="c1">// Less than or equal to (&lt;=)</span>
+<span class="mi">4</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="w"> </span><span class="c1">// false;</span>
+<span class="mi">2</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">4</span><span class="p">;</span><span class="w"> </span><span class="c1">// true;</span>
+<span class="mi">4</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">4</span><span class="w"> </span><span class="c1">// true</span>
+
+<span class="c1">// Greater than or equal to (&gt;=)</span>
+<span class="mi">4</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="w"> </span><span class="c1">// true;</span>
+<span class="mi">2</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">4</span><span class="p">;</span><span class="w"> </span><span class="c1">// false;</span>
+<span class="mi">4</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">4</span><span class="w"> </span><span class="c1">// true</span>
 </pre></div>
 </div>
 <p>As you can see, all of the operators above can be used to return a boolean value.</p>

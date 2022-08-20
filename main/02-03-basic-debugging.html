@@ -240,9 +240,9 @@
 <p>Add back the the semicolon to the end of the line so the compiler can read that line containing the <code class="docutils literal notranslate"><span class="pre">print</span></code> method:</p>
 <div class="literal-block-wrapper docutils container" id="id3">
 <div class="code-block-caption"><span class="caption-text">main.vala</span><a class="headerlink" href="#id3" title="Permalink to this code">#</a></div>
-<div class="highlight-vala notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">main</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="linenos">2</span><span class="w">    </span><span class="n">print</span><span class="w"> </span><span class="p">(</span><span class="n">Hello</span><span class="p">,</span><span class="w"> </span><span class="n">Wwrld</span><span class="p">);</span><span class="w"></span>
-<span class="linenos">3</span><span class="p">}</span><span class="w"></span>
+<div class="highlight-vala notranslate"><div class="highlight"><pre><span></span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">main</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">print</span><span class="w"> </span><span class="p">(</span><span class="n">Hello</span><span class="p">,</span><span class="w"> </span><span class="n">Wwrld</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 </div>
@@ -264,9 +264,9 @@ defined in the language or in our code anywhere but. The compiler fails to find 
 <p>You can fix this by adding back the speech marks to opening and closing speech marks to <code class="docutils literal notranslate"><span class="pre">Hello,</span> <span class="pre">world</span></code> so it looks like this: <code class="docutils literal notranslate"><span class="pre">&quot;Hello,</span> <span class="pre">world&quot;</span></code>.</p>
 <div class="literal-block-wrapper docutils container" id="id4">
 <div class="code-block-caption"><span class="caption-text">main.vala</span><a class="headerlink" href="#id4" title="Permalink to this code">#</a></div>
-<div class="highlight-vala notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">main</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="linenos">2</span><span class="w">    </span><span class="n">print</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;Hello, world&quot;</span><span class="p">);</span><span class="w"></span>
-<span class="linenos">3</span><span class="p">}</span><span class="w"></span>
+<div class="highlight-vala notranslate"><div class="highlight"><pre><span></span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">main</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">print</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;Hello, world&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 </div>
@@ -276,9 +276,9 @@ defined in the language or in our code anywhere but. The compiler fails to find 
 <p>This can be easily fixed by adding “\n” at the end of “Hello, world” string.</p>
 <div class="literal-block-wrapper docutils container" id="id5">
 <div class="code-block-caption"><span class="caption-text">main.vala</span><a class="headerlink" href="#id5" title="Permalink to this code">#</a></div>
-<div class="highlight-vala notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">main</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="linenos">2</span><span class="w">    </span><span class="n">print</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;Hello, world</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">)</span><span class="w"></span>
-<span class="linenos">3</span><span class="p">}</span><span class="w"></span>
+<div class="highlight-vala notranslate"><div class="highlight"><pre><span></span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">main</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">print</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;Hello, world</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">)</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 </div>
@@ -291,9 +291,9 @@ defined in the language or in our code anywhere but. The compiler fails to find 
 <p>For somebody named “Colin”, this is what their code would look like:</p>
 <div class="literal-block-wrapper docutils container" id="id6">
 <div class="code-block-caption"><span class="caption-text">main.vala</span><a class="headerlink" href="#id6" title="Permalink to this code">#</a></div>
-<div class="highlight-vala notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">main</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="linenos">2</span><span class="w">    </span><span class="n">print</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;Hello, Colin</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span><span class="w"></span>
-<span class="linenos">3</span><span class="p">}</span><span class="w"></span>
+<div class="highlight-vala notranslate"><div class="highlight"><pre><span></span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">main</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">print</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;Hello, Colin</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 </div>
@@ -320,10 +320,10 @@ so the compiler ignores the line when reading your code and moves on the next li
 <p>For somebody named “Colin”, this is what their code would look like:</p>
 <div class="literal-block-wrapper docutils container" id="id7">
 <div class="code-block-caption"><span class="caption-text">main.vala</span><a class="headerlink" href="#id7" title="Permalink to this code">#</a></div>
-<div class="highlight-vala notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="c1">// Prints the line &quot;Hello, Colin&quot; to the terminal.&quot;</span>
-<span class="linenos">2</span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">main</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="linenos">3</span><span class="w">    </span><span class="n">print</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;Hello, Colin</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span><span class="w"></span>
-<span class="linenos">4</span><span class="p">}</span><span class="w"></span>
+<div class="highlight-vala notranslate"><div class="highlight"><pre><span></span><span class="c1">// Prints the line &quot;Hello, Colin&quot; to the terminal.&quot;</span>
+<span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">main</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">print</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;Hello, Colin</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 </div>
