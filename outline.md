@@ -139,3 +139,12 @@ Important note:
 11. Make students remove those unused variables.
 12. Make students verify that the program still works
 13. Congrats!
+
+
+## Methods
+
+1. Remind reader that they've been using methods for a while now - creating the main method and calling the print method (which will be revealed as GLib.print in the Object-oriented programming chapter)
+2 Explain what a method is
+3. Walk through the creation of a method and calling the method from
+4. Add a note that technically these are functions because they aren't part of an instance of a class but in Vala we call functions "methods" anyway.
+5. Go into detail about the main entry method and the different ways it can be called and used.
