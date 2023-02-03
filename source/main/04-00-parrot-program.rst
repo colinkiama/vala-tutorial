@@ -12,6 +12,7 @@ Essentially, it will be a program that:
    :hidden:
 
    Entering your phrase <04-01-entering-your-phrase>
+   Cycle through names <04-02-cycle-through-names>
 
 Getting started
 ---------------
