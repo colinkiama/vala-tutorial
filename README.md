@@ -37,7 +37,7 @@ You can find the details of what's included in each chapter below in the [outlin
 - [X] Introduction
 - [X] Setup
 - [X] Getting Started
-- [ ] Data Types and Control Structures
+- [X] Data Types and Control Structures
 - [ ] Methods
 - [ ] Collections
 - [ ] Error Handling

@@ -126,16 +126,26 @@ Important note:
 
 ## Parrot Program
 
-1. Introduce constants
-2. Make students create for loop with a constant for the end condition part
-3. Now make the phrase "Learn Vala, Do Future" be printed on each loop
-4. Introduce input and output streams (regarding console input and output)
-5. Make students enter a phrase in the program then store it in a variable (make them print it to see)
-6. Very briefly introduce arrays. More details will be given later in the tutorial
-7. Make the student copy a line that contains a string array of Parrot names
-8. Make student modify the loop to print the following using printf formatting "{parrot\_name} says: Learn Vala, Do Future" by looping through array indexes
-9. Lastly, make them refactor it by using a foreach loop (the last loop they weren't taught). Explain that because we are always going to go through the whole list and we aren't doing anything unique based on the current position of each name on the list, foreach makes more sense here.
-10. Briefly explain the concept of refactoring and the fact that because they changed the loop they've used, now there are many variables they don't need anymore
-11. Make students remove those unused variables.
-12. Make students verify that the program still works
-13. Congrats!
+1. Introduce input/output streams
+2. Student creates program that reads entered phrase then outputs it.
+3. Phrase be printed on each loop. (Example will use the phrase: "Learn Vala, do future")
+4. Make students that prints the entered phrase multiple times
+5. Introduce input and output streams (regarding console input and output)
+6. Make students enter a phrase in the program then store it in a variable (make them print it to see)
+7. Very briefly introduce arrays for now. (Arrays need to be added to the previous chapter of the tutorial).
+8. Make the student copy a line that contains a string array of Parrot names
+9. Make student modify the loop to print the following using printf formatting "{parrot\_name} says: Learn Vala, Do Future" by looping through array indexes
+10. Lastly, make them refactor it by using a foreach loop (the last loop they weren't taught). Explain that because we are always going to go through the whole list and we aren't doing anything unique based on the current position of each name on the list, foreach makes more sense here.
+11. Briefly explain the concept of refactoring and the fact that because they changed the loop they've used, now there are many variables they don't need anymore
+12. Make students remove those unused variables.
+13. Make students verify that the program still works
+14. Congrats!
+
+
+## Methods
+
+1. Remind reader that they've been using methods for a while now - creating the main method and calling the print method (which will be revealed as GLib.print in the Object-oriented programming chapter)
+2. Explain what a method is
+3. Walk through the creation of a method and calling the method from
+4. Add a note that technically these are functions because they aren't part of an instance of a class but in Vala we call functions "methods" anyway.
+5. Go into detail about the main entry method and the different ways it can be called and used.
