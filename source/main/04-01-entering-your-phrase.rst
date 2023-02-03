@@ -1,7 +1,7 @@
 Entering your phrase
 ====================
 
-To begin, we'll start off by introudce input and ouput streams.
+To begin, we'll start off by introduce input and ouput streams.
 
 Introducing Input and Output Streams
 ------------------------------------
