@@ -15,7 +15,6 @@ you can use an input stream.
 In the parrot program, we'll use the standard input stream to enter data into our program from our terminal.
 
 
-
 To do this, you'll need to:
 
 - Set the value of a ``string`` variable to to a ``stdin.read_line ()`` method call
@@ -57,7 +56,7 @@ In the code examples for this project, the phrase entered will be "Do Vala, do f
 
 After entering your phrase, the program will then: 
 
-1. "You phrase:" followed by the phrase that you just entered
+1. Output "Your phrase:" followed by the phrase that you just entered
 2. Exit
 
 .. code-block::
