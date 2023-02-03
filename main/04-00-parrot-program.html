@@ -3,10 +3,10 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
-<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="15. Coding Styles" href="14-00-coding-styles.html" /><link rel="prev" title="13. Memory Management" href="12-00-memory-management.html" />
+<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="4.1. Entering your phrase" href="04-01-entering-your-phrase.html" /><link rel="prev" title="3.5. Loops" href="03-05-loops.html" />
 
     <link rel="shortcut icon" href="../_static/logo.png"/><!-- Generated with Sphinx 6.1.3 and Furo 2022.12.07 -->
-        <title>14. Profiles - Vala Tutorial</title>
+        <title>4. Project 1: Parrot Program - Vala Tutorial</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?digest=91d0f0d1c444bdcb17a68e833c7a53903343c195" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
@@ -124,7 +124,7 @@
       <a href="../index.html"><div class="brand">Vala Tutorial</div></a>
     </div>
     <div class="header-right">
-      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
         <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
       </label>
     </div>
@@ -159,7 +159,7 @@
 <li class="toctree-l2"><a class="reference internal" href="03-05-loops.html">3.5. Loops</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="04-00-parrot-program.html">4. Parrot Program</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 current has-children current-page"><a class="current reference internal" href="#">4. Parrot Program</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="04-01-entering-your-phrase.html">4.1. Entering your phrase</a></li>
 <li class="toctree-l2"><a class="reference internal" href="04-02-cycle-through-names.html">4.2. Cycle through names</a></li>
 </ul>
@@ -173,7 +173,7 @@
 <li class="toctree-l1"><a class="reference internal" href="10-00-multithreading.html">11. Mulitithreading</a></li>
 <li class="toctree-l1"><a class="reference internal" href="11-00-d-bus.html">12. D-Bus</a></li>
 <li class="toctree-l1"><a class="reference internal" href="12-00-memory-management.html">13. Memory Management</a></li>
-<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">14. Profiles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="13-00-profiles.html">14. Profiles</a></li>
 <li class="toctree-l1"><a class="reference internal" href="14-00-coding-styles.html">15. Coding Styles</a></li>
 <li class="toctree-l1"><a class="reference internal" href="15-00-community.html">16. Community</a></li>
 <li class="toctree-l1"><a class="reference internal" href="16-00-epilogue.html">17. Epilogue</a></li>
@@ -189,34 +189,49 @@
   <main class="main">
     <div class="content">
       <article role="main">
-        <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+        <label class="toc-overlay-icon toc-content-icon" for="__toc">
           <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
         </label>
-        <section id="profiles">
-<h1><span class="section-number">14. </span>Profiles<a class="headerlink" href="#profiles" title="Permalink to this heading">#</a></h1>
+        <section id="project-1-parrot-program">
+<h1><span class="section-number">4. </span>Project 1: Parrot Program<a class="headerlink" href="#project-1-parrot-program" title="Permalink to this heading">#</a></h1>
+<p>Now you’re going to create a program using some of the concepts you’ve learned so far.</p>
+<p>Essentially, it will be a program that:
+- Takes in a phrase that you enter
+- Repeats the entered phrase numerous times
+- Prints sentences that include the phrase you entered</p>
+<div class="toctree-wrapper compound">
+</div>
+<section id="getting-started">
+<h2><span class="section-number">4.3. </span>Getting started<a class="headerlink" href="#getting-started" title="Permalink to this heading">#</a></h2>
+<p>You’ll need to work on this in a new directory under your <code class="docutils literal notranslate"><span class="pre">ValaProjects</span></code> directory. To do this:</p>
+<ol class="arabic simple">
+<li><p>Create a new directory called <code class="docutils literal notranslate"><span class="pre">ParrotProgram</span></code> under your <code class="docutils literal notranslate"><span class="pre">ValaProjects</span></code> directory.</p></li>
+<li><p>Under the <code class="docutils literal notranslate"><span class="pre">ParrotProgram</span></code> directory you have just created, create a new file called <code class="docutils literal notranslate"><span class="pre">main.vala</span></code>.</p></li>
+</ol>
+</section>
 </section>
 
       </article>
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="14-00-coding-styles.html">
+          <a class="next-page" href="04-01-entering-your-phrase.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title"><span class="section-number">15. </span>Coding Styles</div>
+                <div class="title"><span class="section-number">4.1. </span>Entering your phrase</div>
               </div>
               <svg><use href="#svg-arrow-right"></use></svg>
             </a>
-          <a class="prev-page" href="12-00-memory-management.html">
+          <a class="prev-page" href="03-05-loops.html">
               <svg><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
                 <div class="context">
                   <span>Previous</span>
                 </div>
                 
-                <div class="title"><span class="section-number">13. </span>Memory Management</div>
+                <div class="title"><span class="section-number">3.5. </span>Loops</div>
                 
               </div>
             </a>
@@ -225,8 +240,27 @@
       </footer>
       
     </div>
-    <aside class="toc-drawer no-toc">
+    <aside class="toc-drawer">
       
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            Contents
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">4. Project 1: Parrot Program</a><ul>
+<li><a class="reference internal" href="#getting-started">4.3. Getting started</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
       
       
     </aside>

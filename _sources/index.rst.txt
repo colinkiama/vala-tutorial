@@ -37,6 +37,7 @@ You can help us improve this tutorial by contributing to its `GitHub repository 
    Introudction <main/01-00-introduction>
    Getting Started <main/02-00-getting-started>
    Data Types and Control Structures <main/03-00-data-types-and-control-structures>
+   Parrot Program <main/04-00-parrot-program>
    Methods <main/04-00-methods>
    Collections <main/05-00-collections>
    Error Handling <main/06-00-error-handling>
