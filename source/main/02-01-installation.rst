@@ -93,7 +93,7 @@ If you installed everyting correctly, if enter this line in your terminal:
 
 A line like this should be printed in the terminal:
 
-.. code-block:: console
+.. code-block:: output
    
    Vala x.xx.x
 

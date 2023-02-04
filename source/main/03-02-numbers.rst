@@ -45,7 +45,7 @@ You can print the value of ``num`` by adding using the ``print`` method. Add thi
 
 Now, compile your code in ``main.vala`` and run the generated program. You'll see the following output:
 
-.. code-block:: console
+.. code-block:: output
    
    Value of num: 42
 
