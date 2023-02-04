@@ -16,6 +16,10 @@ Methods in more detail
 As explained previously in the Hello World section, a method is a block of 
 code that contain code for the program to execute when called.
 
+.. note::
+
+    These are technically functions because they aren't part of an instance of a class but in Vala we call functions "methods" anyway.
+
 Now let's create a program that makes use of a method that you create and call.
 
 First, let's start with a Hello World program
