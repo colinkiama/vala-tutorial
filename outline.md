@@ -17,6 +17,7 @@ Important note:
     - [Enums and Switch Statements](#enums-and-switch-statements)
     - [Namespaces (Reveal that the data types used so far are from GLib)](#namespaces)
     - [Loops](#loops)
+- [Arrays](#arrays)
 - [Parrot Program](#parrot-program)
 - Methods (Introduce asynchronous methods here and variable-length argument lists here too.)
 - Collections
@@ -123,6 +124,16 @@ Important note:
     - While loop
     - Do while loop
     - For loop
+
+## Arrays
+
+Use the GNOME Wiki for info on arrays.
+
+- Introduce arrays
+- Go over array syntax
+- Array Slices
+- Array methods
+- Array bounds (talk about fixed size arrays being allocation on stack and the fact that Vala does not do bounds checking for array access at runtime. Show a potential array error that could happen).
 
 ## Parrot Program
 
