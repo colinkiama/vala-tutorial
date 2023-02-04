@@ -52,7 +52,7 @@ Now let's use the ``for`` loop to make each parrot repeat the entered phrase.
 After compilng this program, for the input "It is what it is",
 the following output will be displayed: 
 
-.. code-block:: console
+.. code-block:: output
 
     Jurg says: It is what it is
     Raffaele says: It is what it is
