@@ -39,7 +39,10 @@ The number within the square brackets ``[]`` is the size of the array.
     just the array to store them in.
 
 
-You can set the value of an array method by getting a rerefence to the element's location
+Accessing Array Elements
+------------------------
+
+You can set the value of an array method by getting a reference to the element's location
 using it's index in the array. 
 
 Array indexes in Vala are zero-indexed so the first element in the array is referenced by 0.
@@ -96,6 +99,36 @@ e.g. ``int count = a.length.``:
         }
     }
 
+Slices
+------
+
+You can slice an array with ``[start:end]``:
+
+.. code-block:: vala
+    int[] my_original_array = {99, 2006, 7, 15}
+    int[] my_slice = my_original_array[1:3]; // { 2006, 7, 15 }
+
+Slicing an array will result in a reference to the requested data, not a copy. 
+However, assigning the slice to an owned variable (as is done above) will result in a copy.
+
+If you would like to avoid a copy, you must either assign the slice to an 
+unowned array or pass it directly to an argument (arguments are, by default, unowned):
+
+.. code-block:: vala
+
+    int[] my_slice = my_original_array[1:3]; // { 2006, 7, 15 }
+
+Multi-dimensional arrays
+------------------------
+
+Appending to arrays
+-------------------
+
+Array methods
+-------------
+
+Fixed-size Arrays
+-----------------
 
 Summary
 -------
