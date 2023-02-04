@@ -39,15 +39,17 @@ You can help us improve this tutorial by contributing to its `GitHub repository 
    Data Types and Control Structures <main/03-00-data-types-and-control-structures>
    Parrot Program <main/04-00-parrot-program>
    Methods <main/05-00-methods>
-   .. Collections <main/05-00-collections>
-   .. Error Handling <main/06-00-error-handling>
-   .. Object-Oriented Programming <main/07-00-object-oriented-programming>
-   .. Libraries and Build Systems <main/08-00-libraries-and-build-systems>
-   .. Debugging <main/09-00-debugging>
-   .. Mulitithreading <main/10-00-multithreading>
-   .. D-Bus <main/11-00-d-bus>
-   .. Memory Management <main/12-00-memory-management>
-   .. Profiles <main/13-00-profiles>
-   .. Coding Styles <main/14-00-coding-styles>
-   .. Community <main/15-00-community>
-   .. Epilogue <main/16-00-epilogue>
+   
+.. 
+   Collections <main/05-00-collections>
+   Error Handling <main/06-00-error-handling>
+   Object-Oriented Programming <main/07-00-object-oriented-programming>
+   Libraries and Build Systems <main/08-00-libraries-and-build-systems>
+   Debugging <main/09-00-debugging>
+   Mulitithreading <main/10-00-multithreading>
+   D-Bus <main/11-00-d-bus>
+   Memory Management <main/12-00-memory-management>
+   Profiles <main/13-00-profiles>
+   Coding Styles <main/14-00-coding-styles>
+   Community <main/15-00-community>
+   Epilogue <main/16-00-epilogue>
