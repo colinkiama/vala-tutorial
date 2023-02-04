@@ -40,7 +40,7 @@ Now build the code with ``valac``.
 
 You'll see the following error displayed:
 
-.. code-block:: console
+.. code-block:: output
    
    main.vala:2.24-2.24: error: syntax error, following expression/statement delimiter `;' missing    
        2 |     print (Hello, world)    
@@ -70,7 +70,7 @@ Add back the the semicolon to the end of the line so the compiler can read that 
 
 Now, try to build the Hello World program again.
 
-.. code-block:: console
+.. code-block:: output
    
     main.vala:2.12-2.16: error: The name `Hello' does not exist in the context of `main'
         2 |     print (Hello, world);

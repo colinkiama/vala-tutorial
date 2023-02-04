@@ -43,7 +43,7 @@ Now, compile and run this program.
 
 Your terminal should display this:
 
-.. code-block:: console
+.. code-block:: output
    
    Enter your phrase: 
 
@@ -59,7 +59,7 @@ After entering your phrase, the program will then:
 1. Output "Your phrase:" followed by the phrase that you just entered
 2. Exit
 
-.. code-block:: console
+.. code-block:: output
 
    Enter your phrase: Do Vala, do future
    Your phrase: Do Vala, do future
