@@ -25,3 +25,4 @@ In this chapter we will:
    Booleans and if-statements <03-03-bools-and-ifs>
    Enums and Switch Statements <03-04-enums-and-switch-statements>
    Loops <03-05-loops>
+   Arrays <03-06-arrays>
