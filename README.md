@@ -1,3 +1,5 @@
+DEPRECATED! - There is now an official [Vala documentaiton website](https://docs.vala.dev). The repository for the website is here: https://github.com/vala-lang/vala-docs/
+---
 
 # Vala Tutorial
 
